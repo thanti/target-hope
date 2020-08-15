@@ -1,0 +1,27 @@
+.footer
+    background-color: $secondary-color
+    padding: rem(30) 0
+    margin-top: rem(100)
+
+.inline--footer
+    display: block
+
+.footer__content
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.footer-text
+    color: $white-color
+    font-size: rem(12)
+    font-weight: 300
+    display: block
+
+@media (max-width: 480px)
+    
+    .footer__content
+        display: flex 
+        flex-direction: column
+
+    .footer-text
+        margin-bottom: rem(10)

@@ -1,0 +1,102 @@
+// Basic Colors 
+$primary-color: #384A3A
+$secondary-color: #8D867D
+$tertiary-color: #C9C4BE
+$hero-color: #D3CEC8
+
+$border-color: #71d8c5
+$warning-color: #ffb137
+$error-color: #f44336
+$success-color: #4CAF50
+$info-color: #2196F3
+$black-color: #000000
+$white-color: #ffffff
+
+$grey-color-10: #F8F8F9
+$grey-color-20: #F4F4F5 
+$grey-color-50: #E8E8EC 
+$grey-color-60: #D3D3DA 
+$grey-color-70: #BDBCC7 
+$grey-color-80: #9090A2 
+$grey-color-100: #65647C 
+
+// Text Colors 
+$text-color: #4B4B4B
+
+// Table Colors
+// $table-head-color: #
+// $table-row-color: #
+// $table-row-color-light: #
+// $table-row-color-dark: #
+// $table-row-color-medium: #
+// $table-row-color-disabled: #
+
+// Social Media (check https://brandcolors.net/)
+$facebook: #3b5998
+$google-plus: #dd4b39
+$instagram: #405de6
+$pinterest: #bd081c
+$printer: #696969
+$twitter: #1da1f2
+$world: #218863
+$youtube: #ff0000
+
+// Font Load
+$font-path: '../fonts/'
+@font-face
+    font-family: 'encodesanscondensed-regular'
+    font-style: normal
+    font-weight: 400
+    src: local('encodesanscondensed-regular'), url('#{$font-path}encodesanscondensed-regular.woff') format('woff'), url('#{$font-path}encodesanscondensed-regular.woff2') format('woff2')
+
+// Font Names 
+$primary-font-family: 'OpenSans-Regular', sans-serif
+$primary-font-family-thin: 'OpenSans-Light', sans-serif
+$secondary-font-family: 'Roboto', sans-serif 
+$tertiary-font-family: 'Merriweather', serif
+
+// Font Weight 
+$font-weight-regular: 400
+$font-weight-medium: 600
+$font-weight-bold: 800
+
+// Font Sizes [xxs- xxl]
+$headline-font-size-xl: rem(46)
+$headline-font-size-l: rem(42)
+$headline-font-size-m: rem(32)
+$headline-font-size-s: rem(22)
+
+$text-font-size: rem(20)
+$text-font-copy: rem(17)
+$text-font-copy-small: rem(15)
+
+$button-font-size-m: rem(11)
+$input-font-size-m: rem(11)
+
+//Width
+$page-width: rem(1120)
+$article-width: rem(600)
+
+// // Columns 
+// $col-count: 12
+// $col-spacing: rem(20)
+
+// @mixin col--x
+//     $col-list: null
+//     @for $i from 1 through $col-count
+//         .col--#{$i}
+//             width: $i / $col-count * 100%
+
+//         $col-list: append($col-list, unquote(".col--#{$i}"), comma)
+    
+// @include col--x
+
+// .col
+//     padding-right: $col-spacing
+//     padding-left: $col-spacing
+
+// Images
+$img-path: '../img/'
+$sprite-icons: url('#{$img-path}sprite_icons.svg')
+$sprite-icons_size-x: rem(300)
+$sprite-icons_size-y: rem(1500)

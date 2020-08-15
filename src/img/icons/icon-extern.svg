@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>icons/20x20/grey/extern_link</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icons/20x20/grey/extern_link" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M12,0 L12,2 L16.475,2 L9.066,9.165 L10.536,10.457 L18,2.926 L18,8 L20,8 L20,0 L12,0 Z M18,12 L20,12 L20,20 L-1.77635684e-15,20 L-1.77635684e-15,0 L8,0 L8,2 L2,2 L2,18 L18,18 L18,12 Z" id="send-[#1570]" fill="#BDBCC7"></path>
+    </g>
+</svg>

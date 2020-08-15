@@ -1,0 +1,101 @@
+.info 
+    background-color: $primary-color
+    padding: rem(50) 0
+
+.info__content
+    text-align: center
+    padding: 0 rem(24)
+    min-width: 50%
+
+    &:first-child 
+        border-right: 1px solid $secondary-color
+        padding-right: rem(10)
+
+    &:last-child 
+        padding-left: rem(30)
+
+    .icon 
+        margin-bottom: rem(10)
+
+.info-headline
+    color: $white-color
+    font-size: rem(21)
+    font-weight: 800
+    line-height: rem(24)
+    margin-bottom: rem(24)
+    word-break: break-word
+
+.info-text
+    color: $white-color
+    font-size: rem(15)
+    line-height: rem(24)
+    text-align: center
+    margin-bottom: rem(20)
+
+    &:last-child 
+        margin: 0 
+
+//with img
+
+.info-big
+    padding-top: rem(50) 
+    padding-bottom: rem(50) 
+
+.info__image
+    min-width: calc((100% - 30px) / 3)
+    width: calc((100% - 30px) / 3)
+    display: block
+
+.info-big__content
+    min-width: calc((100% - 30px) / 3 * 2)
+    width: calc((100% - 30px) / 3 * 2)
+    display: block
+
+.info-headline--big 
+    color: $text-color
+    font-size: rem(40)
+    line-height: rem(52)
+    text-align: left
+
+.info-text--dark
+    color: $text-color
+    text-align: left
+
+@media (max-width: 768px)
+    
+    .inline--info
+        display: block 
+    
+    .info-inline
+        display: block
+
+    .info-big__content
+        padding: 0 
+        width: 100%
+
+    .image.info__image
+        width: 100%
+        margin-bottom: rem(24)
+
+    .info__content  
+        padding: 0
+        width: 100%
+
+        &:first-child 
+            padding-right: 0
+            padding-bottom: rem(50)
+            margin-bottom: rem(50)
+            border-right: none 
+            border-bottom: 1px solid $secondary-color
+
+        &:last-child 
+            padding-left: 0
+
+@media (max-width: 480px)
+    
+    .image.info__image
+        width: 100%
+        margin-bottom: rem(24)
+    
+    .inline--info
+        display: block

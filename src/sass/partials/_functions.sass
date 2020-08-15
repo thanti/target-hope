@@ -1,0 +1,100 @@
+// Gradient Top > Bottom
+=func_gradient_tb($top_color, $top_alpha, $bottom_color, $bottom_alpha)
+    $faded_color_top: transparentize($top_color, $top_alpha)
+    $faded_color_bottom: transparentize($bottom_color, $bottom_alpha)
+    background: -moz-linear-gradient(top,  $faded_color_top, $faded_color_bottom) // FF3.6+
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$faded_color_top), color-stop(100%,$faded_color_bottom)) // Chrome,Safari4+
+    background: -webkit-linear-gradient(top,  $faded_color_top,$faded_color_bottom) // Chrome10+,Safari5.1+
+    background: -o-linear-gradient(top,  $faded_color_top,$faded_color_bottom ) // Opera 11.10+
+    background: -ms-linear-gradient(top,  $faded_color_top,$faded_color_bottom) // IE10+
+    background: linear-gradient(to bottom,  $faded_color_top,$faded_color_bottom) // W3C
+
+// Gradient Left > Right
+=func_gradient_lr($left_color, $left_alpha, $right_color, $right_alpha)
+    $faded_color_left: transparentize($left_color, $left_alpha)
+    $faded_color_right: transparentize($right_color, $right_alpha)
+    background: $left_color // Old browsers
+    background: -moz-linear-gradient(left,  $faded_color_left ,$faded_color_right) // FF3.6+
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,$faded_color_left), color-stop(100%,$faded_color_right)) // Chrome,Safari4+
+    background: -webkit-linear-gradient(left,  $faded_color_left ,$faded_color_right) // Chrome10+,Safari5.1+
+    background: -o-linear-gradient(left,  $faded_color_left ,$faded_color_right) // Opera 11.10+
+    background: -ms-linear-gradient(left,  $faded_color_left ,$faded_color_right) // IE10+
+    background: linear-gradient(to right,  $faded_color_left ,$faded_color_right) // W3C
+
+// Gradient Radial
+=func_gradient_radial ($position: 50% 100%, $shape: ellipse, $extend-keyword: farthest-side, $color-stop1: rgba(255, 255, 255, .1) 0%, $color-stop2: rgba(0, 0, 0, 0) 100%)
+    background-image: -webkit-radial-gradient($position, $shape, $extend-keyword, $color-stop1, $color-stop2)
+    background-image: -moz-radial-gradient($position, $shape, $extend-keyword, $color-stop1, $color-stop2)
+    background-image: -o-radial-gradient($position, $shape, $extend-keyword, $color-stop1, $color-stop2)
+    background-image: radial-gradient($position, $shape, $extend-keyword, $color-stop1, $color-stop2)
+
+// Background-Image + Gradient
+=func_gradient_and_image($top_color, $bottom_alpha, $bottom_color, $top_alpha, $bg_image: '/my/path/to/image.png', $bg_position: center center,$bg_repeat: no-repeat)
+    $faded_color_top: transparentize($top_color, $top_alpha)
+    $faded_color_bottom: transparentize($bottom_color, $bottom_alpha)
+    background-image: url($bg_image), $top_color
+    background-image: url($bg_image), -moz-linear-gradient(top,  $faded_color_top, $faded_color_bottom) // FF3.6+
+    background-image: url($bg_image), -webkit-gradient(linear, left top, left bottom, color-stop(0%,$faded_color_top), color-stop(100%,$faded_color_bottom)) // Chrome,Safari4+
+    background-image: url($bg_image), -webkit-linear-gradient(top,  $faded_color_top,$faded_color_bottom) // Chrome10+,Safari5.1+
+    background-image: url($bg_image), -o-linear-gradient(top,  $faded_color_top,$faded_color_bottom ) // Opera 11.10+
+    background-image: url($bg_image), -ms-linear-gradient(top,  $faded_color_top,$faded_color_bottom) // IE10+
+    background-image: url($bg_image), linear-gradient(to bottom,  $faded_color_top,$faded_color_bottom) // W3C
+    background-position: $bg_position
+    background-repeat: $bg_repeat
+
+// Box-Shadow Helper
+=func_boxshadow_helper($level: 1)
+    @if ($level == 1)
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)
+    @if ($level == 2)
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
+    @if ($level == 3)
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
+    @if ($level == 4)
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
+    @if ($level == 5)
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)
+
+// Clearfix
+=func_clearfix()
+    &:before,
+    &:after
+        content: ""
+        display: table
+    &:after
+        clear: both
+    zoom: 1
+
+// Push rendering to graphics card
+=func_gpu()
+    transform: translateZ(0)
+    -moz-transform: translateZ(0)
+    -ms-transform: translateZ(0)
+    -o-transform: translateZ(0)
+    -webkit-transform: translateZ(0)
+
+// Pixels to EM
+$browser-context: 16px
+@function em($pixels, $context: $browser-context)
+    @if (unitless($pixels))
+        $pixels: $pixels * 1px
+    @if (unitless($context))
+        $context: $context * 1px
+    @return $pixels / $context * 1em
+
+// Pixels to REM
+@function rem($pixels, $context: $browser-context)
+    @if (unitless($pixels))
+        $pixels: $pixels * 1px
+    @if (unitless($context))
+        $context: $context * 1px
+    @return $pixels / $context * 1rem
+
+// Sprite
+=func_sprite($sprite: url('#{$img}sprite_icons.svg'), $xpos: 0, $ypos: 0, $sprite_size-x: 300px, $sprite_size-y: 1500px, $divider: 1)
+    background-image: $sprite
+    background-position-x: $xpos * $divider
+    background-position-y: $ypos * $divider
+    background-position: $xpos * $divider $ypos * $divider
+    background-repeat: no-repeat
+    background-size: $sprite_size-x * $divider $sprite_size-y * $divider

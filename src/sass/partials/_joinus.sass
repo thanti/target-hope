@@ -1,0 +1,62 @@
+.joinus 
+    padding: rem(50) 0
+
+.inline--joinus
+    display: block
+
+.joinus-inline-container
+    display: flex
+    justify-content: space-between
+
+.joinus__content
+    min-width: calc((100% - 30px) / 2 )
+    width: calc((100% - 30px) / 2 )
+    display: block
+
+.content-header
+    display: flex
+    align-items: center
+    margin-bottom: rem(18)
+
+    .icon 
+        margin-right: rem(8)
+
+.joinus-headline
+    color: $text-color
+    font-weight: 800
+    font-size: rem(40)
+    line-height: rem(52)
+    margin-bottom: rem(24)
+
+.content-headline
+    color: $text-color
+    font-weight: 800
+    font-size: rem(21)
+
+.joinus-text
+    color: $text-color
+    font-size: rem(15)
+    line-height: rem(24)
+    margin-bottom: rem(60)
+
+    &:last-child 
+        margin: 0 
+
+.joinus__image
+    min-width: calc((100% - 30px) / 2)
+    width: calc((100% - 30px) / 2)
+    height: 100%
+    display: block
+    overflow: hidden
+
+@media (max-width: 764px)
+    
+    .joinus-inline-container
+        display: block
+    
+    .joinus__content
+        margin-bottom: rem(40)
+        width: 100%
+
+    .image.joinus__image
+        width: 100%

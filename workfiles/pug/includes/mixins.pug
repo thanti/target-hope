@@ -1,0 +1,138 @@
+//- Pug Mixins
+
+//- Loop
+mixin loop(count)
+    - var n = 0
+    while n < count
+        block
+        - n++
+
+//- Dummy Image Generators -//
+
+
+//- PlaceImage Dummyimage Mixin
+//- Categories: animals, arch, nature, people, tech
+mixin dummyimage(width, height, cat)
+    img(src="https://placeimg.com/" + width + "/" + height + "/" + cat, alt=width + "x" + height)
+//- Usage PlaceImage Dummyimage Mixin
+//- +dummyimage(width, height, cat)
+//- write e.g. +dummyimage(640, 480, animals)
+
+
+//- vA Dummyimage Mixin
+mixin dummyimage_va(classname, width, height)
+
+    if (classname)
+        img(class=classname src="http://di.vonaffenfels.de/"+width+"x"+height+"/0069b4/fff", alt=width+"x"+height)
+
+    else
+        img(src="http://di.vonaffenfels.de/"+width+"x"+height+"/0069b4/fff", alt=width+"x"+height)
+//- Usage vA Dummyimage Mixin
+//- +dummyimage("classes", width, height)
+//- write e.g. +dummyimage("img-responsive", 836, 500)
+//- or w/o classes
+//- +dummyimage(width, height)
+//- write e.g. +dummyimage(836, 500)
+
+
+//- Unsplash Dummyimage Mixin
+mixin dummyimage_unsplash(classname, width, height)
+    
+    - var myArray = [1895329,430077,193913,165911];
+    - var randomID = myArray[Math.floor(Math.random()*myArray.length)];
+    
+    if (classname)
+        img(class=classname src="https://source.unsplash.com/collection/"+randomID+"/"+width+"x"+height alt=width+"x"+height)
+    
+    else
+        img(src="https://source.unsplash.com/collection/"+randomID+"/"+width+"x"+height alt=width+"x"+height)
+//- Usage Unsplash Dummyimage Mixin
+//- +dummyimage("classes", width, height)
+//- write e.g. +dummyimage("img-responsive", 836, 500)
+//- or w/o classes
+//- +dummyimage(width, height)
+//- write e.g. +dummyimage(836, 500)
+
+
+//- Image Mixin
+mixin image(imgname, alt, classname)
+
+    if (classname)
+        img(class=classname src="../src/img/"+imgname alt=alt)
+
+    else
+        img(src="../src/img/"+imgname alt=alt)
+//- Usage Image Mixin
+//- +image("image name", "alt", "class name")
+//- write e.g. +image("flower.jpg", "Flower", "img-responsive")
+//- or w/o classes
+//- +image("image name", "alt")
+//- write e.g. +image("flower.jpg", "Flower")
+
+
+//- Icon Mixin
+mixin icon(icon_class, svg_url, svg_id)
+    i(class=icon_class)
+        svg(role="img")
+            use(xlink:href= svg_url+'#'+svg_id)
+//- Usage Icon Mixin
+//- +icon("classes","../src/img/sprite.svg", "svgID")
+//- write e.g. +icon("icon icon--small icon--primary", "../src/img/all.svg", "icon-tiles")
+//- You may use the grunt plugin grunt-svgstore to merge all svgs from a folder 
+
+
+// Table Generator
+mixin table(classname, cols, rows)
+
+    div(class=classname)
+        table
+            tr
+                +loop(cols) 
+                    th 
+                        - var th_length = Math.floor(Math.random() * (5 - 25) + 25);
+                        +lipsum(th_length, "characters")
+            +loop(rows)
+                tr
+                    +loop(cols)
+                        td
+                            - var td_length = Math.floor(Math.random() * (10 - 44) + 44)
+                            +lipsum(td_length, "characters")
+//- Usage Table Generator
+//- +table("article__table", columns, rows)
+//- write e.g. +table("article__table", 4, 6)
+
+
+// List Generator
+mixin list_text(list_type, list_items)
+    
+    if (list_type === "ul" || list_type === "ol")
+
+        #{list_type}
+            +loop(list_items)
+                - var li_length = Math.floor(Math.random() * (30 - 250) + 250)
+                li 
+                    +lipsum(li_length, "characters")
+
+    if (list_type === "dl")
+
+        #{list_type}
+            +loop(list_items)
+                - var dt_length = Math.floor(Math.random() * (10 - 50) + 50)
+                dt 
+                    +lipsum(dt_length, "characters")
+                - var dd_length = Math.floor(Math.random() * (10 - 50) + 50)
+                dd 
+                    +lipsum(dd_length, "characters")
+//- Usage List Generator
+//- +list_text("type of list",number of list items)
+//- write e.g. +list_text("ul",20)
+
+
+// Random Text Generator
+mixin random_text(val1, val2)
+    - var random_val = Math.floor(Math.random() * (val1 - val2) + val2)
+    +lipsum(random_val, "characters")
+//- Usage Random Text Generator
+//- Requires lorem_ipsum_mixin
+//- +random_text(smallest number, highest number)
+//- write e.g. +random_text(300, 400)

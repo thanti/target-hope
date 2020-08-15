@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 64 (101010) - https://sketch.com -->
+    <title>FA4F5B64-592E-45C1-AC85-9AF4E624CDB7</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Modules" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons" transform="translate(-348.000000, -367.000000)" fill="#BDBCC7">
+            <g id="Stacked-Group" transform="translate(108.000000, 367.000000)">
+                <g id="icons/20x20/grey/delete" transform="translate(240.000000, 0.000000)">
+                    <path d="M7,16 L9,16 L9,8 L7,8 L7,16 Z M11,16 L13,16 L13,8 L11,8 L11,16 Z M5,18 L15,18 L15,6 L5,6 L5,18 Z M7,4 L13,4 L13,2 L7,2 L7,4 Z M15,4 L15,0 L5,0 L5,4 L-5.32907052e-15,4 L-5.32907052e-15,6 L3,6 L3,20 L17,20 L17,6 L20,6 L20,4 L15,4 Z" id="icons-/-delete"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,88 @@
+.hero 
+    padding-bottom: rem(100)
+    position: relative
+    z-index: 10
+
+.hero__image
+    min-width: calc((100% - 30px) / 3 * 2)
+    width: calc((100% - 30px) / 3 * 2)
+    display: block
+
+.hero__content
+    min-width: calc((100% - 20px) / 3)
+    width: calc((100% - 20px) / 3)
+    display: block
+
+.hero-overline
+    color: $secondary-color
+    font-size: rem(19)
+    font-weight: 800
+    text-transform: uppercase 
+    margin-bottom: rem(24)
+
+.hero-headline
+    color: $white-color
+    font-size: rem(54)
+    font-weight: 800
+    line-height: rem(62)
+    margin-bottom: rem(24)
+    display: block
+
+.hero-text
+    color: $text-color
+    font-size: rem(15)
+    line-height: rem(24)
+
+//hero white
+
+.hero--white
+    background-color: $white-color
+
+.hero-inline--white 
+    flex-direction: row-reverse
+
+@media (max-width: 900px)
+
+    .hero__image
+        min-width: calc((100% - 30px) / 2)
+        width: calc((100% - 30px) / 2)
+        display: block
+
+    .hero__content
+        min-width: calc((100% - 20px) / 2)
+        width: calc((100% - 20px) / 2)
+        display: block
+
+    .hero-overline
+        font-size: rem(16)
+        margin-bottom: rem(12)
+
+    .hero-headline
+        font-size: rem(44)
+        line-height: rem(52)
+        margin-bottom: rem(12)
+
+@media (max-width: 768px)
+    
+    .hero
+        padding-top: rem(0) 
+        padding-bottom: rem(20)
+
+    .hero__content
+        width: 100%
+
+    .hero__image
+        width: 100%
+
+
+@media (max-width: 480px)
+    
+    .hero
+        padding-top: rem(0) 
+        padding-bottom: rem(50)
+    
+    .hero-headline
+        font-size: rem(36)
+        line-height: rem(42)
+
+
