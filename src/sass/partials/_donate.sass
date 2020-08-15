@@ -1,0 +1,117 @@
+.donate
+    padding: rem(50) 0 0
+
+.inline--donate
+    display: flex 
+    justify-content: center
+
+.donate-text__image
+    min-width: calc((100% - 30px) / 3 )
+    width: calc((100% - 30px) / 3 )
+    height: 100%
+    display: block
+
+    overflow: hidden
+
+    img 
+        height: 100%
+        width: auto
+
+.donate__content
+    padding: 0 rem(40)
+    display: flex 
+    align-items: center
+
+    .icon 
+        fill: $tertiary-color
+        padding-right: rem(14)
+
+    &:first-child 
+        border-right: 1px solid $secondary-color
+
+    &:hover,
+    &:focus 
+        color: $secondary-color
+
+        .icon 
+            fill: $secondary-color
+
+    .content-headline  
+        font-size: rem(35)  
+        color: $tertiary-color
+
+    &:hover,
+    &:focus 
+        .content-headline 
+            color: $secondary-color
+
+.donate-text
+    color: $text-color
+    line-height: rem(24)
+    margin-bottom: rem(24)
+
+.donate__content--active
+
+    .content-headline 
+        color: $secondary-color
+
+    .icon 
+        fill: $secondary-color
+
+.donate-box
+    background-color: $primary-color
+    color: $white-color
+    padding: rem(40)
+
+// donate with text
+
+.donate-text__content
+    padding: 0 rem(0) 0 rem(40)
+    min-width: calc((100% - 30px) / 3 * 2 )
+    width: calc((100% - 30px) / 3 * 2)
+    display: block
+
+.donate-text__content
+    border-left: 1px solid $secondary-color
+
+.donate__info 
+    display: flex 
+    justify-content: space-between
+
+.association
+    text-transform: uppercase
+
+.donate-box__header
+    color: $tertiary-color
+    margin-bottom: rem(40)
+    display: flex 
+    align-items: center 
+
+    .icon 
+        fill: $tertiary-color
+        margin-right: rem(12)
+
+.donate-headline
+    font-size: rem(21)
+    font-weight: 800
+    line-height: rem(28)
+
+.donate-box__header
+    margin-bottom: rem(30)
+
+.bank-item,
+.usage-item
+    font-size: rem(15)
+    margin-bottom: rem(14)
+
+    &:last-child 
+        margin: none
+
+.bank 
+    padding-right: rem(20)
+
+@media (max-width: 768px)
+    
+    .donate-text__content,
+    .donate-text__image
+        width: 100%

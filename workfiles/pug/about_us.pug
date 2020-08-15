@@ -1,44 +1,15 @@
-.basics__headline
-    h1.headline.headline--xl H1
-    h1.headline.headline--xl Mehr Medienkompetenz für Ihre Schüler
+extends includes/html_start
+block content
+    .wrapper
+        .wrapper-top
+            include includes/header/header
+            include includes/elements/hero_join
+        include includes/elements/info
+        include includes/elements/info_image
+        include includes/elements/world
+        include includes/elements/facts
+        include includes/elements/joinus
 
-.basics__headline
-    h2.headline.headline--l H2
-    h2.headline.headline--l Mehr Medienkompetenz für Ihre Schüler
+        include includes/footer
 
-.basics__headline.blog
-    h2.headline.headline--l H2 
-        br 
-        | Blog
-    h2.headline.headline--l Mehr Medienkompetenz für Ihre Schüler
-
-.basics__headline
-    h3.headline.headline--m H3
-    h3.headline.headline--m Mehr Medienkompetenz für Ihre Schüler
-
-.basics__headline.blog
-    h3.headline.headline--m H3 
-        br 
-        | Blog
-    h3.headline.headline--m Mehr Medienkompetenz für Ihre Schüler
-
-.basics__headline
-    h4.teaser-headline Teaser 
-    h4.teaser-headline Mehr Medienkompetenz für Ihre Schüler
-
-.basics__headline
-    h4.headline.headline--s H4
-    h4.headline.headline--s Mehr Medienkompetenz für Ihre Schüler
-
-.basics__text 
-    p.basics__text--box Introtext
-    p.basics__text--box Die Digitalisierung ist in der Schule angekommen – man merkt das daran, dass von Vielen nicht mehr über das ob, sondern über das wie diskutiert
-
-.basics__text 
-    p.copy.basics__text--box Copy
-    p.copy.basics__text--box Die Digitalisierung ist in der Schule angekommen – man merkt das daran, dass von Vielen nicht mehr über das ob, sondern über das wie diskutiert wird. Was gehört aber zu einer Digitalen Schule
-
-.basics__text
-    p.copy--small.basics__text--box Copy small
-    p.copy--small.basics__text--box Die Digitalisierung ist in der Schule angekommen – man merkt das daran, dass von Vielen nicht mehr über das ob, sondern über das wie diskutiert wird. Was gehört aber zu einer Digitalen Schule
-
+    include includes/html_end
