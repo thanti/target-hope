@@ -1,0 +1,88 @@
+//button 
+
+.button
+    border: 2px solid transparent
+    background-color: $primary-color
+    color: $white-color
+    font-size: rem(18)
+    font-family: $primary-font-family-bold
+    text-align: center
+    padding: rem(15) rem(30)
+    display: inline-block
+
+    &:hover 
+        border-color: $primary-color
+        background-color: transparent
+        color: $primary-color
+
+.button
+
+    &:hover 
+        .icon
+            fill: $primary-color
+
+    .icon 
+        margin-left: rem(10)
+
+//Button SLider
+
+.button-slider
+    border: none
+    background-color: transparent
+    padding: rem(20)
+    margin: 0
+    position: absolute
+    top: calc(50% - 51.5px)
+    z-index: 80
+
+    .icon 
+        margin: 0
+        fill: $text-color
+
+    &:hover 
+        border: none
+        
+        .icon
+            margin: 0
+            fill: $white-color
+
+    &:focus 
+        border: none
+
+        .icon
+            margin: 0
+            fill: $white-color
+
+.button--prev
+
+    .icon
+        transform: rotate(180deg)
+
+.button--prev
+    left: -95px
+
+.button--next
+    right: -95px
+
+@media (max-width: 1190px)
+    
+    .button--prev
+        left: -70px
+
+    .button--next
+        right: -70px
+
+@media (max-width: 480px)
+    
+    .button-slider
+        .icon
+            margin: 0
+            fill: $white-color
+
+    .button--prev
+        left: -20px
+        top: 55px
+
+    .button--next
+        right: -20px
+        top: 55px

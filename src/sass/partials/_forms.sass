@@ -1,0 +1,269 @@
+textarea.teaser__note--input,
+input.teaser__note--input
+    font-family: 'Arial'
+    font-size: $text-font-copy
+    font-weight: $font-weight-regular
+    padding-right: rem(50)
+    resize: none
+
+.form__item,
+.form__row
+    margin-bottom: rem(24)
+    position: relative
+
+
+.form__item--textarea
+    margin-bottom: rem(10)
+
+.form
+    .textarea,
+    textarea,
+    .input,
+    input,
+    .select
+        width: 100%
+      
+.textarea,
+textarea,
+.input,
+input,
+.select
+    background-color: $grey-color-20
+    border: 1px solid $grey-color-20
+    font-family: $primary-font-family
+    font-size: $text-font-copy-small
+    line-height: 1.15em
+    padding: 0.8em
+    position: relative
+    
+    &:disabled
+        background-color: $grey-color-10
+        border: 1px solid $grey-color-50
+        color: $grey-color-70
+        pointer-events: none
+
+        &::-webkit-input-placeholder
+            color: $grey-color-70
+            font-family: $primary-font-family
+            font-size: $text-font-copy-small
+        &::-moz-placeholder
+            color: $grey-color-70
+            font-family: $primary-font-family
+            font-size: $text-font-copy-small
+        &:-ms-input-placeholder
+            color: $grey-color-70
+            font-family: $primary-font-family
+            font-size: $text-font-copy-small
+        &:-moz-placeholder
+            color: $grey-color-70
+            font-family: $primary-font-family
+            font-size: $text-font-copy-small
+
+    &:focus
+        border: 1px solid $tertiary-color
+
+    &.is-invalid
+        border: 1px solid $primary-color
+        background-color: none
+
+.input,
+input,
+textarea,
+.textarea
+    &::-webkit-input-placeholder
+        color: $grey-color-80
+        font-family: $primary-font-family
+        font-size: $text-font-copy-small
+    &::-moz-placeholder
+        color: $grey-color-80
+        font-family: $primary-font-family
+        font-size: $text-font-copy-small
+    &:-ms-input-placeholder
+        color: $grey-color-80
+        font-family: $primary-font-family
+        font-size: $text-font-copy-small
+    &:-moz-placeholder
+        color: $grey-color-80
+        font-family: $primary-font-family
+        font-size: $text-font-copy-small
+// .form
+//     position: relative
+//     background-color: $grey-color-20
+//     color: $tertiary-color
+//     width: 100%
+//     height: 42px
+//     padding: 12px
+//     display: block
+//     margin-bottom: 24px
+//     &.form--textarea
+//         height: auto
+//         min-height: 150px
+//         margin-bottom: 10px
+
+.textarea
+    min-height: 150px
+    resize-x: none
+
+.form--placeholder
+    width: 80%
+    color: $grey-color-80
+
+.select
+    position: relative
+    cursor: pointer
+
+    &:before
+        content: ''
+        border-left: 1px solid $grey-color-60
+        width: 35px
+        height: 24px
+        position: absolute
+        right: 0px
+        top: calc(50% - 12px)
+
+    &:after
+        content: ''
+        border-right: 1px solid $tertiary-color
+        border-bottom: 1px solid $tertiary-color
+        width: 6px
+        height: 6px
+        position: absolute
+        right: 15px 
+        top: calc(50% - 3px)
+        transform: rotate(45deg)
+
+    &.active
+        border-left: 1px solid $tertiary-color
+        border-top: 1px solid $tertiary-color
+        border-right: 1px solid $tertiary-color
+
+
+.form
+    .form__item
+        .select
+            & ~ .list
+                    display: none
+
+        .select.active
+            & ~ .list
+                background-color: $white-color
+                border-left: 1px solid $tertiary-color
+                border-right: 1px solid $tertiary-color
+                border-bottom: 1px solid $tertiary-color
+                width: 100%
+                display: block
+                position: absolute
+                top: 100%
+                left: 0
+
+            .list__item
+                margin-bottom: rem(10)
+
+                // &:nth-child(2n + 1)
+                //     background-color: $grey-color-20
+
+                &:last-child
+                    margin-bottom: 0
+
+        .dropdown__list
+            margin-bottom: rem(24)
+
+        .checkbox-label 
+            color: $tertiary-color
+
+            &:before
+                width: 20px
+                height: 20px
+                left: 6px
+        .checkbox
+            &:checked + .checkbox-label:after
+                width: 11px 
+                height: 7px
+                left: 10px
+                top: calc(50% - 7px)
+
+.list--radio
+    .checkbox-label
+        &:before
+            width: 16px
+            height: 16px
+            left: 5px
+            top: calc(50% - 8px)
+            border-radius: 50%
+
+    .checkbox
+        &:checked + .checkbox-label:after
+            border-bottom: 0px solid white
+            border-left: 0px solid white
+            border-radius: 50%
+            background-color: $primary-color
+            width: 8px
+            height: 8px 
+            top: 14px
+            left: 9px
+
+.error-message 
+    display: none
+
+.form__item.error
+    .error-message
+        display: block
+        color: $primary-color
+        font-size: $input-font-size-m
+        margin-top: rem(5)
+
+
+
+.form.form--disabled
+    // .form
+    //     background-color: $grey-color-10
+    //     border: 1px solid $grey-color-50
+    //     color: $grey-color-70
+    
+    .checkbox
+        &:checked + .checkbox-label:after  
+            background-color: $grey-color-50 
+            border-bottom: 0px solid white
+            border-left: 0px solid white
+            width: 13px
+            height: 13px
+            top: 50%
+            transform: rotate(0deg) translate(0, -50%)
+
+    // .checkbox-label
+    //     color: $grey-color-70
+    //     &:before
+    //         border: 1px solid $grey-color-50
+
+    .list--radio
+        .checkbox
+            &:checked + .checkbox-label:after  
+                background-color: $grey-color-50 
+                border-bottom: 0px solid white
+                border-left: 0px solid white
+                border-radius: 50%
+                width: 8px
+                height: 8px 
+                top: 50%
+                transform: translate(0, -50%)
+
+        .checkbox-label
+            &:before
+                border-radius: 50%
+                border: 1px solid $grey-color-50
+
+.is-invalid
+    .form--item
+        .textarea,
+        textarea,
+        .input,
+        input,
+        .select
+            border: 1px solid $primary-color
+            
+.form__row
+    display: flex
+    justify-content: space-between
+
+    .input 
+        width: calc(100% / 2 - 10px)

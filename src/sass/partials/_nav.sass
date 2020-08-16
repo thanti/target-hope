@@ -1,45 +1,19 @@
-\:root
-    font-size: 16px
+.nav 
+    position: relative 
+    right: rem(60)
+    top: rem(7)
 
-html
-    box-sizing: border-box
+.nav__logo
+    cursor: pointer
 
-*, *:before, *:after
-    box-sizing: inherit
 
-img 
-    width: 100%
-    height: auto
+@media (max-width: 764px)
 
-body
-    color: $tertiary-color
+    .nav 
+        position: absolute
+        top: rem(24)
 
-a
-    text-decoration: none 
-    color: $primary-color
-    
-.absolute
-    position: absolute
+@media (max-width: 480px)
 
-.active
-    display: block
-
-.float-left
-    float: left
-
-.float-right
-    float: right
-
-.text-right
-    text-align: right
-
-.text-left 
-    text-align: left
-
-.higher
-    z-index: 100
-
-.dropdown,
-.button,
-.dropdown-item
-    transition: all 300ms ease
+    .nav 
+        right: rem(15)

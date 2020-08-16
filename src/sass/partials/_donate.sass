@@ -2,25 +2,28 @@
     padding: rem(50) 0 0
 
 .inline--donate
+    padding-bottom: 0
     display: flex 
     justify-content: center
 
 .donate-text__image
-    min-width: calc((100% - 30px) / 3 )
-    width: calc((100% - 30px) / 3 )
-    height: 100%
     display: block
-
     overflow: hidden
+    position: relative
 
     img 
         height: 100%
         width: auto
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
 
 .donate__content
     padding: 0 rem(40)
     display: flex 
     align-items: center
+    cursor: pointer
 
     .icon 
         fill: $tertiary-color
@@ -37,8 +40,9 @@
             fill: $secondary-color
 
     .content-headline  
-        font-size: rem(35)  
         color: $tertiary-color
+        font-size: rem(35)  
+        letter-spacing: 0.7px
 
     &:hover,
     &:focus 
@@ -65,16 +69,16 @@
 
 // donate with text
 
-.donate-text__content
-    padding: 0 rem(0) 0 rem(40)
-    min-width: calc((100% - 30px) / 3 * 2 )
-    width: calc((100% - 30px) / 3 * 2)
-    display: block
+.inline--donate-text
+    padding-top: 0
 
 .donate-text__content
+    padding: 0 rem(0) 0 rem(40)
+    display: block
     border-left: 1px solid $secondary-color
 
 .donate__info 
+    line-height: rem(24)
     display: flex 
     justify-content: space-between
 
@@ -93,7 +97,7 @@
 
 .donate-headline
     font-size: rem(21)
-    font-weight: 800
+    font-family: $primary-font-family-bold
     line-height: rem(28)
 
 .donate-box__header
@@ -110,8 +114,92 @@
 .bank 
     padding-right: rem(20)
 
+.donate-text__content.hide,
+.donate-form__content.hide,
+    display: none
+
+.donate-text__content.show,
+.donate-form__content.show
+    display: block
+
+.donate-form__content
+        width: 100%
+
 @media (max-width: 768px)
     
+    .inline--donate
+        padding-top: rem(50)
+
+    .donate-text__image
+        height: 400px
+
+        img 
+            width: 100%
+            height: auto
+
     .donate-text__content,
+    .donate-form__content
+        padding: 0
+        margin-bottom: rem(30)
+        width: 100%
+        border-left: none
+
     .donate-text__image
         width: 100%
+
+@media (max-width: 669px)
+    
+    .container--donate
+        padding-bottom: 0
+    
+    .inline--donate
+        padding: 0
+        display: block
+
+    .donate__content
+        padding: rem(30) rem(20)
+        justify-content: center
+
+        &:first-child
+            border: none
+
+        &:hover,
+        &:focus 
+            background-color: $primary-color
+
+            .content-headline
+                color: $white-color
+
+            .icon 
+                fill: $white-color
+
+    .donate__content--active
+        background-color: $primary-color
+
+        .content-headline 
+            color: $white-color
+
+        .icon 
+            fill: $white-color
+
+    .donate-text__content,
+    .donate-form__content
+        border-top: 1px solid $secondary-color
+        border-left: none
+        padding-top: rem(50)
+        margin-bottom: rem(50)
+
+@media (max-width: 480px)
+
+    .donate__info 
+        display: block
+
+    .donate-box
+        padding: rem(30) rem(15)
+        margin: 0 rem(-15)
+
+    .bank 
+        margin-bottom: rem(40)
+
+
+

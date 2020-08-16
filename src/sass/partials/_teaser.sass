@@ -1,0 +1,53 @@
+.inline--teaser
+    display: block
+
+.teaser-overline,
+.teaser-headline
+    color: $secondary-color
+
+.teaser-overline
+    font-size: rem(13)
+    font-family: $primary-font-family-bold
+    line-height: rem(20)
+    text-transform: uppercase
+
+.teaser-headline
+    font-size: rem(21)
+    font-family: $primary-font-family-bold
+    line-height: rem(27)
+    margin-bottom: rem(12)
+
+.headline--dark
+    color: $text-color
+
+.headline--bright
+    color: $secondary-color
+
+.teaser__item
+    margin-bottom: rem(40)
+    width: calc((100% - 40px) / 3 )
+
+.teaser-img 
+    display: block
+    margin-bottom: rem(10)
+
+.teaser-text
+    color: $text-color
+    font-size: rem(16)
+    line-height: rem(24)
+    column-count: 2
+    column-gap: 40px
+
+@media (max-width: 764px)
+    
+    .teaser-text
+        column-count: 1
+
+    .teaser__item
+        margin-bottom: rem(20)
+        width: calc((100% - 30px) / 2 )
+
+@media (max-width: 480px)
+    
+    .teaser__item
+        width: 100%

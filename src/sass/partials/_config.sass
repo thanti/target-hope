@@ -44,16 +44,38 @@ $youtube: #ff0000
 // Font Load
 $font-path: '../fonts/'
 @font-face
-    font-family: 'encodesanscondensed-regular'
+    font-family: 'Prompt'
     font-style: normal
-    font-weight: 400
-    src: local('encodesanscondensed-regular'), url('#{$font-path}encodesanscondensed-regular.woff') format('woff'), url('#{$font-path}encodesanscondensed-regular.woff2') format('woff2')
+    font-weight: 600
+    src: url('#{$font-path}prompt-v4-latin-regular.woff2') format('woff2'), url('#{$font-path}prompt-v4-latin-regular.woff') format('woff')
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000
+
+@font-face
+    font-family: 'Prompt-800'
+    font-style: normal
+    font-weight: 600
+    src: url('#{$font-path}prompt-v4-latin-800.woff2') format('woff2'), url('#{$font-path}prompt-v4-latin-800.woff') format('woff')
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000
+
+@font-face
+    font-family: 'Prompt-300'
+    font-style: normal
+    font-weight: 600
+    src: url('#{$font-path}prompt-v4-latin-300.woff2') format('woff2'), url('#{$font-path}prompt-v4-latin-300.woff') format('woff')
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000
+
+@font-face
+    font-family: 'Prompt-300italic'
+    font-style: normal
+    font-weight: 600
+    src: url('#{$font-path}prompt-v4-latin-300italic.woff2') format('woff2'), url('#{$font-path}prompt-v4-latin-300italic.woff') format('woff')
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000
 
 // Font Names 
-$primary-font-family: 'OpenSans-Regular', sans-serif
-$primary-font-family-thin: 'OpenSans-Light', sans-serif
-$secondary-font-family: 'Roboto', sans-serif 
-$tertiary-font-family: 'Merriweather', serif
+$primary-font-family: 'Prompt,', sans-serif
+$primary-font-family-thin: 'Prompt-300', sans-serif
+$primary-font-family-bold: 'Prompt-800', sans-serif
+$primary-font-family-italy: 'Prompt-300italic', sans-serif
 
 // Font Weight 
 $font-weight-regular: 400

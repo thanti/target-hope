@@ -1,0 +1,76 @@
+.container--tertiary.color-before
+    position: relative
+    margin-bottom: rem(50)
+
+    &:after 
+        content: ''
+        background-color: $tertiary-color
+        width: 80px
+        height: 50px
+        position: absolute 
+        bottom: -50px
+        left: calc(50% - 40px)
+        clip-path: polygon(100% 0, 0 0, 50% 73%)
+
+.inline--project
+    display: block
+
+.project-text
+    font-family: $primary-font-family-thin
+    color: $text-color
+    font-size: rem(16)
+    line-height: rem(24)
+    margin-bottom: rem(20)
+
+.project-next
+    color: $secondary-color
+    font-family: $primary-font-family-italy
+    margin-top: rem(40)
+    display: block
+
+    .icon 
+        margin-left: rem(10)
+
+    &:hover 
+        color: $primary-color
+
+        .icon
+            fill: $primary-color
+
+.color-before
+    margin-top: rem(-50)
+
+.project-text-container
+    padding: 0 rem(0) 0 rem(40)
+    display: block
+    border-left: 1px solid $white-color
+
+.project__image 
+    position: relative
+
+    img 
+        height: 100% 
+        width: auto
+        position: absolute
+        top: 50% 
+        left: 50% 
+        transform: translate(-50%, -50%)
+
+@media (max-width: 764px)
+    
+    .project-inline-container
+        display: block
+
+    .project-text-container
+        border: none
+        padding: 0
+        margin-bottom: rem(40)
+
+    .project__image 
+        height: 300px
+
+        img 
+            height: auto 
+            width: 100%
+            position: relative
+    

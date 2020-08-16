@@ -1,6 +1,6 @@
-.donate-information
+.wrapper-container
     .wrapper-inline.inline--donate-text
-        .donate-text__content
+        .container-2.donate-text__content
             .donate-text Target Hope e.V. finanziert seine Hilfsprojekte ausschließlich durch private Spenden. Diese sind in Deutschland steuerlich absetzbar.
             .donate-text 
                 strong Für finanzielle Unterstützung für unsere Projekte sind wir sehr dankbar! 
@@ -9,7 +9,7 @@
             .donate-text Eine Pauschale von 10% auf alle eingehenden Spenden wird für die allgemeine Vereinsarbeit von Target Hope e.V. verwendet, vor allem für Werbung und Verwaltungskosten.
             .donate-box
                 .donate-box__header
-                    +icon("icon", "../src/img/all.svg", "join")
+                    +icon("icon", "../src/img/all.svg", "icon-bank")
                     .donate-headline Bankverbindung
                 .donate__info 
                     .bank 
@@ -23,6 +23,18 @@
                         .usage-item 
                             i + Name des Projekts bitte hier angeben
 
-        .image.donate-text__image
-            img(src="http://di.vonaffenfels.de/364x615/384A3A/fff", alt="")
+        .container-2.donate-form__content.hide
+            form.form
+                .form__item
+                    input.input(type="text" placeholder="Grund Ihrer Anfrage")
+                .form__row
+                    input.input(type="text" placeholder="Name")
+                    input.input(type="text" placeholder="E-Mail-Adresse")
+                .form__item.form__item--textarea
+                    textarea.textarea(row="10" placeholder="Ihre Nachricht")
+
+                input.button(type="submit" value="Absenden")
+
+        .container-1.image.donate-text__image
+            img(src="http://di.vonaffenfels.de/323x610/384A3A/fff", alt="")
                 

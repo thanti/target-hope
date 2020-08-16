@@ -1,0 +1,63 @@
+.inline--slider
+    display: block
+
+.slider-headline
+    color: $text-color
+    font-family: $primary-font-family-bold
+    font-size: rem(40)
+    line-height: rem(52)
+    margin-bottom: rem(24)
+
+.slider-container
+    display: flex 
+
+.slider
+    position: relative
+
+.slider__item
+    margin-right: rem(20)
+    width: 319px
+    display: block
+
+    &:last-child 
+        margin: 0
+
+.slider-img 
+    display: block
+    margin-bottom: rem(10)
+
+.slider-overline,
+.slider-headline
+    color: $white-color
+
+.slider-overline
+    font-size: rem(13)
+    font-family: $primary-font-family-bold
+    line-height: rem(20)
+    text-transform: uppercase
+
+.slider-headline
+    font-size: rem(21)
+    line-height: rem(27)
+
+.flex-slider 
+    flex-wrap: 
+
+@media (max-width: 764px)
+    
+    .joinus-inline-container
+        display: block
+    
+    .joinus__content
+        margin-bottom: rem(40)
+        width: 100%
+
+    .image.joinus__image
+        width: 100%
+
+@media (max-width: 480px)
+    
+    .flex-slider
+    
+        &:after 
+            display: none
