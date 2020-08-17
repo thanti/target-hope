@@ -29,14 +29,6 @@ i
 .wrapper 
     margin: 0 auto
 
-.wrapper-inline
-    margin: 0 auto
-    padding: rem(50) rem(60)
-    max-width: $page-width
-    width: 100%
-    display: flex 
-    justify-content: space-between
-
 .wrapper-top
     position: relative
 
@@ -93,6 +85,32 @@ i
 
 //container
 
+.col-middle
+    padding: 0 rem(60)
+    margin: 0 auto
+    max-width: $page-width
+    width: 100%
+    display: flex 
+    justify-content: space-between
+
+.col-inline
+    margin-left: rem(-15)
+    margin-right: rem(-15)
+    margin-bottom: rem(100)
+
+.container--hero
+    padding-bottom: rem(150)
+    position: relative
+    z-index: 10
+
+.container--donate
+    padding: rem(100) 0 0
+
+.inline--hero,
+.inline--world
+    padding-bottom: 0
+    margin-bottom: 0
+
 .container--tertiary
     background-color: $tertiary-color
     padding: rem(50) 0
@@ -101,20 +119,18 @@ i
     background-color: $white-color
 
 .inline--white 
-    flex-direction: row-reverse
+    margin-bottom: 0
 
-    .hero-headline
-        color: $secondary-color
+    .col-middle
+        flex-direction: row-reverse
 
-.container--hero
-    padding-bottom: rem(100)
-    position: relative
-    z-index: 10
+        .hero-headline
+            color: $secondary-color
 
 .container--green
     background-color: $primary-color
     padding: rem(50) 0
-    margin-bottom: rem(50)
+    margin-bottom: rem(100)
 
 .wrapper-container
     padding-bottom: rem(50) 
@@ -123,7 +139,7 @@ i
 .container--world
     background: url('../img/bg-bright.jpg') center center no-repeat
     background-size: cover
-    padding: rem(50) 0
+    padding: rem(100) 0 rem(80)
     margin-bottom: rem(50)
 
 .container--slider
@@ -137,20 +153,38 @@ i
     display: flex 
     justify-content: space-between
 
-.container-2
-    width: calc((100% - 30px) / 3 * 2)
+@media (max-width: 900px)
+    
+    .col--3,
+    .col--4,
+    .col--5,
+    .col--6,
+    .col--7,
+    .col--8
+        width: 50%
 
-.container-1
-    width: calc((100% - 30px) / 3)
-
-.container-50
-    width: calc(50% - 30px)
+    .col-inline
+        display: block
 
 @media (max-width: 768px)
     
-    .wrapper-inline
-        padding: rem(15) rem(60)
+    .col--3,
+    .col--4,
+    .col--5,
+    .col--6,
+    .col--7,
+    .col--8
+        width: 100%
+
+    .col-container,
+    .col-middle
         display: block
+
+    .container--donate
+        padding: 0
+
+    .container--hero
+        padding-bottom: rem(50)
 
     .image
         width: 100%
@@ -162,26 +196,21 @@ i
             content: ''
             width: calc((100% - 40px) / 2)
 
-    .container-2
-        width: 100%
-
-    .container-1
-        width: 100%
-
-    .container-50
-        width: 100%
-
-        .button 
-            margin-bottom: rem(40)
-
 @media (max-width: 480px)
+    
+    .col--3,
+    .col--4,
+    .col--5,
+    .col--6,
+    .col--7,
+    .col--8
+        width: 100%
 
-    .wrapper-inline
+    .col-middle
         padding: 0 rem(15)
+        display: block
     
     .flex-teaser
 
         &:after 
             display: none
-
-

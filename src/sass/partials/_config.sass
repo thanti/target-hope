@@ -99,26 +99,26 @@ $input-font-size-m: rem(11)
 $page-width: 1120px
 $article-width: 600px
 
-// // Columns 
-// $col-count: 12
-// $col-spacing: rem(20)
+// Columns 
+$col-count: 12
+$col-spacing: 15px
 
-// @mixin col--x
-//     $col-list: null
-//     @for $i from 1 through $col-count
-//         .col--#{$i}
-//             width: $i / $col-count * 100%
+@mixin col--x
+    $col-list: null
+    @for $i from 1 through $col-count
+        .col--#{$i}
+            width: $i / $col-count * 100%
 
-//         $col-list: append($col-list, unquote(".col--#{$i}"), comma)
+        $col-list: append($col-list, unquote(".col--#{$i}"), comma)
     
-// @include col--x
+@include col--x
 
-// .col
-//     padding-right: $col-spacing
-//     padding-left: $col-spacing
+.col
+    padding-right: $col-spacing
+    padding-left: $col-spacing
 
-// Images
-$img-path: '../img/'
-$sprite-icons: url('#{$img-path}sprite_icons.svg')
-$sprite-icons_size-x: rem(300)
-$sprite-icons_size-y: rem(1500)
+.col-inline
+    margin-right: -$col-spacing
+    margin-left: -$col-spacing
+    
+

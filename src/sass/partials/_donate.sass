@@ -1,10 +1,8 @@
-.donate
-    padding: rem(50) 0 0
-
 .inline--donate
-    padding-bottom: 0
-    display: flex 
-    justify-content: center
+    .col-middle
+        padding-bottom: 0
+        display: flex 
+        justify-content: center
 
 .donate-text__image
     display: block
@@ -22,6 +20,7 @@
 .donate__content
     padding: 0 rem(40)
     display: flex 
+    justify-content: center
     align-items: center
     cursor: pointer
 
@@ -73,8 +72,6 @@
     padding-top: 0
 
 .donate-text__content
-    padding: 0 rem(0) 0 rem(40)
-    display: block
     border-left: 1px solid $secondary-color
 
 .donate__info 
@@ -128,7 +125,8 @@
 @media (max-width: 768px)
     
     .inline--donate
-        padding-top: rem(50)
+        .col-middle
+            padding-top: rem(50)
 
     .donate-text__image
         height: 400px
@@ -139,7 +137,6 @@
 
     .donate-text__content,
     .donate-form__content
-        padding: 0
         margin-bottom: rem(30)
         width: 100%
         border-left: none
@@ -153,8 +150,11 @@
         padding-bottom: 0
     
     .inline--donate
-        padding: 0
-        display: block
+        margin-bottom: 0
+
+        .col-middle
+            padding: 0
+            display: block
 
     .donate__content
         padding: rem(30) rem(20)

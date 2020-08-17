@@ -8,12 +8,15 @@
         width: 80px
         height: 50px
         position: absolute 
-        bottom: -50px
+        bottom: -49px
         left: calc(50% - 40px)
         clip-path: polygon(100% 0, 0 0, 50% 73%)
 
 .inline--project
-    display: block
+    margin: rem(50) 0
+
+    .col-middle
+        display: block
 
 .project-text
     font-family: $primary-font-family-thin
@@ -41,8 +44,7 @@
     margin-top: rem(-50)
 
 .project-text-container
-    padding: 0 rem(0) 0 rem(40)
-    display: block
+    padding-left: rem(40)
     border-left: 1px solid $white-color
 
 .project__image 
@@ -57,6 +59,9 @@
         transform: translate(-50%, -50%)
 
 @media (max-width: 764px)
+    
+    .inline--project
+        margin: 0
     
     .project-inline-container
         display: block

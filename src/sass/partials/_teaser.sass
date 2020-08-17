@@ -1,5 +1,8 @@
 .inline--teaser
-    display: block
+    margin-top: rem(50)
+    
+    .col-middle
+        display: block
 
 .teaser-overline,
 .teaser-headline
@@ -25,7 +28,6 @@
 
 .teaser__item
     margin-bottom: rem(40)
-    width: calc((100% - 40px) / 3 )
 
 .teaser-img 
     display: block
@@ -42,12 +44,3 @@
     
     .teaser-text
         column-count: 1
-
-    .teaser__item
-        margin-bottom: rem(20)
-        width: calc((100% - 30px) / 2 )
-
-@media (max-width: 480px)
-    
-    .teaser__item
-        width: 100%
