@@ -72,6 +72,8 @@
     padding-top: 0
 
 .donate-text__content
+    padding-left: rem(40)
+    padding-right: rem(40)
     border-left: 1px solid $secondary-color
 
 .donate__info 
@@ -184,10 +186,20 @@
 
     .donate-text__content,
     .donate-form__content
-        border-top: 1px solid $secondary-color
         border-left: none
         padding-top: rem(50)
-        margin-bottom: rem(50)
+        margin-bottom: rem(10)
+
+    .donate-text__content
+        padding: 0 rem(15) 
+
+    .donate-text
+        &:first-child
+            border-top: 1px solid 
+            padding-top: rem(50)
+
+    .donate-box 
+        margin-top: rem(50)
 
 @media (max-width: 480px)
 
@@ -196,7 +208,8 @@
 
     .donate-box
         padding: rem(30) rem(15)
-        margin: 0 rem(-15)
+        margin-right: rem(-15)
+        margin-left: rem(-15)
 
     .bank 
         margin-bottom: rem(40)
