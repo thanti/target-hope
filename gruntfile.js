@@ -16,7 +16,7 @@ module.exports = function (grunt) {
         'postcss',
         'cssmin',
         'pug',
-        'browserSync',
+        //'browserSync',
         'watch'
     ]);
 
@@ -33,10 +33,10 @@ module.exports = function (grunt) {
             dev: {
                 bsFiles: {
                     src : [
-                        './src/css/*.css',
-                        './workfiles/*.html',
+                        './assets/css/*.css',
+                        './site/templates/*.html',
                         './workfiles/pug/**/*.pug',
-                        './src/img/*.*'
+                        './assets/img/*.*'
                     ]
                 },
                 options: {
@@ -46,7 +46,7 @@ module.exports = function (grunt) {
                     },
                     watchTask: true,
                     server: './',
-                    startPath: './workfiles/',
+                    startPath: './',
                     browsers: 'google chrome'
                 }
             }
@@ -61,7 +61,7 @@ module.exports = function (grunt) {
                 },
                 files: [
                     {
-                        './src/css/styles.css': './src/sass/styles.sass',
+                        './assets/css/styles.css': './assets/sass/styles.sass',
                     }
                 ]
             }
@@ -79,7 +79,7 @@ module.exports = function (grunt) {
             },
             dist: {
                 src: [
-                        './src/css/**/*.css'
+                        './assets/css/**/*.css'
                     ]
             }
         },
@@ -90,20 +90,20 @@ module.exports = function (grunt) {
                     report: 'min'
                 },
                 files: {
-                    './src/css/styles.css': './src/css/styles.css',
+                    './assets/css/styles.css': './assets/css/styles.css',
                 }
             }
         },
 
         pug: {
-            compile: {
+            compile_templates: {
                 files: [
                     {
                         expand: true,
-                        cwd: "./workfiles/pug",
+                        cwd: "./workfiles/pug/templates",
                         src: "*.pug",
-                        dest: "./workfiles",
-                        ext: ".html"
+                        dest: "./site/templates/",
+                        ext: ".php"
                     }
                 ],
                 options: {
@@ -121,7 +121,7 @@ module.exports = function (grunt) {
             },
             default: {
                 files: {
-                    './src/img/all.svg': ['./src/img/icons/*.svg'],
+                    './assets/img/all.svg': ['./assets/img/icons/*.svg'],
                 },
             },
         },
@@ -129,7 +129,7 @@ module.exports = function (grunt) {
         watch: {
             sass: {
                 files: [
-                        './src/sass/**/*.sass'
+                        './assets/sass/**/*.sass'
                 ],
                 tasks: ['watcherCss']
             },
@@ -143,7 +143,7 @@ module.exports = function (grunt) {
             },
 
             js: {
-                files: ['./src/js/**/*.js'],
+                files: ['./assets/js/**/*.js'],
                 tasks: ['watcherCss', 'pug']
             }
         }
