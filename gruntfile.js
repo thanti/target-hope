@@ -34,7 +34,7 @@ module.exports = function (grunt) {
                 bsFiles: {
                     src : [
                         './assets/css/*.css',
-                        './site/templates/*.html',
+                        './site/templates/*.php',
                         './workfiles/pug/**/*.pug',
                         './assets/img/*.*'
                     ]
@@ -46,7 +46,7 @@ module.exports = function (grunt) {
                     },
                     watchTask: true,
                     server: './',
-                    startPath: './',
+                    startPath: './site/templates/',
                     browsers: 'google chrome'
                 }
             }
@@ -102,7 +102,7 @@ module.exports = function (grunt) {
                         expand: true,
                         cwd: "./workfiles/pug/templates",
                         src: "*.pug",
-                        dest: "./site/templates/",
+                        dest: "./workfiles/",
                         ext: ".php"
                     }
                 ],

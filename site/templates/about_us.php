@@ -4,16 +4,15 @@
 <!-- Random Text Generator--><!DOCTYPE html>
 <html lang="de">
   <head>
-    <title>Target Hope</title>
+    <title><?= $site->title()->html() ?> | <?= $page->title()->html() ?></title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="../../../assets/css/styles.css?v=1.0">
-    <link rel="shortcut icon" href="../../../assets/src/img/favicon.ico">
-    <link rel="apple-touch-icon" href="../../../assets/src/img/apple-touch-icon.png">
-    <link rel="apple-touch-icon-precomposed" href="../../../assets/src/img/apple-touch-icon.png">
-    <link rel="icon" sizes="192x192" href="../../../assets/src/img/android-touch-icon.png">
+    <meta name="description" content="<?= $site->description() ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"><?= css(['assets/css/styles.css', '@auto']) ?>
+    <link rel="shortcut icon" href="<?= url('assets/img/favicon.ico') ?>">
+    <link rel="apple-touch-icon" href="<?= url('assets/img/apple-touch-icon.png') ?>">
+    <link rel="apple-touch-icon-precomposed" href="<?= url('assets/img/apple-touch-icon.png') ?>">
+    <link rel="icon" sizes="192x192" href="<?= url('assets/img/android-touch-icon.png') ?>">
     <!-- script(src=js + "jquery.min.js?v=" + version)-->
     <!-- script(src=js + "workfiles.js?v=" + version)-->
     <!-- script(src=js/slick.min.js)--><!--[if lte IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><script>window.html5 || document.write("<script src="js/vendor/html5shiv.js"><\/script>")</script><![endif]-->
@@ -24,9 +23,9 @@
       <div class="wrapper-top">
         <header class="header">
           <div class="col-inline inline--header">
-            <div class="col-middle"><a class="header__logo" href="index.html"><i class="logo logo--white">
+            <div class="col-middle"><a class="header__logo" href="<?= $site->url()?>"><?php $svgUrl = url('asset/img/all.svg') ?><i class="logo logo--white">
                   <svg role="img">
-                    <use xlink:href="../src/img/all.svg#icon-logo"></use>
+                    <use xlink:href="undefined#icon-logo"></use>
                   </svg></i></a>
               <div class="nav">
                 <div class="nav__logo"><i class="icon icon--small icon--secondary">
@@ -159,7 +158,7 @@
                     <use xlink:href="../src/img/all.svg#icon-logo"></use>
                   </svg></i></a>
               <div class="footer-text--right">
-                <div class="footer-text">© Copyright 2020 Target Hope e.V.</div><a class="footer-text" href="impressum.html">Impressum</a><a class="footer-text" href="datenschutz.html">Datenschutz</a>
+                <div class="footer-text"><?= $site->copyright()->html() ?></div><a class="footer-text" href="impressum.html">Impressum</a><a class="footer-text" href="datenschutz.html">Datenschutz</a>
               </div>
             </div>
           </div>
@@ -169,10 +168,10 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="../../../assets/src/js/bootstrap/bootstrap.min.js?v=1.0"></script>
-    <script src="../../../assets/src/js/slick.min.js?v=1.0"></script>
-    <script src="../../../assets/src/js/jquery.masonry.min.js?v=1.0"></script>
-    <script src="../../../assets/src/js/rellax.min.js?v=1.0"></script>
-    <script src="../../../assets/src/js/workfiles.js?v=1.0"></script>
+    <script src="undefinedbootstrap/bootstrap.min.js?v=undefined"></script>
+    <script src="undefinedslick.min.js?v=undefined"></script>
+    <script src="undefinedjquery.masonry.min.js?v=undefined"></script>
+    <script src="undefinedrellax.min.js?v=undefined"></script>
+    <script src="undefinedworkfiles.js?v=undefined"></script>
   </body>
 </html>

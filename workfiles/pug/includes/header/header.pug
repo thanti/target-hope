@@ -1,6 +1,7 @@
 header.header
     .col-inline.inline--header
         .col-middle
-            a(href='index.html').header__logo
-                +icon("logo logo--white", "../src/img/all.svg", "icon-logo")
+            a(href!='<?= $site->url()?>').header__logo
+                <?php $svgUrl = url('asset/img/all.svg') ?>
+                +icon("logo logo--white", $svgUrl, "icon-logo")
             include nav
