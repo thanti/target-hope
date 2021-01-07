@@ -17,13 +17,13 @@
         </div>
       </footer>
     </div>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="undefinedbootstrap/bootstrap.min.js?v=undefined"></script>
-    <script src="undefinedslick.min.js?v=undefined"></script>
-    <script src="undefinedjquery.masonry.min.js?v=undefined"></script>
-    <script src="undefinedrellax.min.js?v=undefined"></script>
-    <script src="undefinedworkfiles.js?v=undefined"></script>
+    <?= js('//code.jquery.com/jquery-1.11.0.min.js') ?>
+    <?= js('//code.jquery.com/jquery-migrate-1.2.1.min.js') ?>
+    <?= js('https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js') ?>
+    <?= js('assets/js/bootstrap/bootstrap.min.js?v=1.0') ?>
+    <?= js('assets/js/slick.min.js?v=1.0') ?>
+    <?= js('assets/js/jquery.min.js?v=1.0') ?>
+    <?= js('assets/js/rellax.min.js?v=1.0') ?>
+    <?= js('assets/js/workfiles.js?v=1.0') ?>
   </body>
 </html>

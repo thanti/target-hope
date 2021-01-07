@@ -8,7 +8,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="description" content="<?= $site->description() ?>">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"><?= css(['assets/css/styles.css', '@auto']) ?>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <?= css(['assets/css/styles.css', '@auto']) ?>
     <link rel="shortcut icon" href="<?= $site->image('favicon.ico')->url() ?>">
     <link rel="apple-touch-icon" href="<?= $site->image('apple-touch-icon.png')->url() ?>">
     <link rel="apple-touch-icon-precomposed" href="<?= $site->image('apple-touch-icon.png')->url() ?>">
