@@ -1,14 +1,14 @@
 <?php snippet('html_start') ?>
   <div class="wrapper">
     <div class="wrapper-top">
-      <?php snippet('header') ?>
-      <?php snippet('hero_join') ?>
+      <?php snippet('header/header') ?>
+      <?php snippet('elements/hero_join') ?>
     </div>
-    <?php snippet('info') ?>
-    <?php snippet('info_image') ?>
-    <?php snippet('world') ?>
-    <?php snippet('facts') ?>
-    <?php snippet('joinus') ?>
+    <?php snippet('elements/info') ?>
+    <?php snippet('elements/info_image') ?>
+    <?php snippet('elements/world') ?>
+    <?php snippet('elements/facts') ?>
+    <?php snippet('elements/joinus') ?>
 
     <?php snippet('footer') ?>
   </div>
