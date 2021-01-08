@@ -7,14 +7,6 @@
                 </svg>
             </i>
         </a>
-        <div class="nav">
-            <div class="nav__logo">
-                <i class="icon icon--small icon--secondary">
-                    <svg role="img">
-                        <use xlink:href="../src/img/all.svg#icon-nav"></use>
-                    </svg>
-                </i>
-            </div>
-        </div>
+        <?php snippet('nav.php') ?>
     </div>
 </header>
