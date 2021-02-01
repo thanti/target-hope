@@ -7,3 +7,35 @@ Donate_Text:
 <p>Für die Zusendung Ihrer Spendenbescheinigung geben Sie bei der Überweisung bitte Ihren Namen und Ihre vollständige Adresse an. Spendenbescheinigungen werden immer automatisch im Januar des Folgejahres verschickt.</p>
 <p>Eine Pauschale von 10% auf alle eingehenden Spenden wird für die allgemeine Vereinsarbeit von Target Hope e.V. verwendet, vor allem für Werbung und Verwaltungskosten.</p>
 ----
+Bank_Headline: Bankverbindung
+----
+Bank_Association: <strong>Target Hope e.v.</strong>
+----
+Bank_Name: BW Bank
+----
+Bank_IBAN: IBAN:    DE28 6005 0101 0001 2877 12
+----
+Bank_BIC: BIC:    SOLADEST600
+----
+Usage_Headline: Verwendungszweck
+----
+Usage_Item: <i>+ Name des Projekts bitte hier angeben</i>
+----
+Placeholder_Reason: Grund Ihrer Anfrage
+----
+Placeholder_Name: Name
+----
+Placeholder_Email: E-Mail-Adresse
+----
+Placeholder_Message: Ihre Nachricht
+----
+Form_Submit: Absenden
+----
+Donate_Headline: Spenden
+----
+Join_Headline: Mitmachen
+----
+Join_Hero_Headline: Hoffnung, die zum Tragen kommt
+----
+Join_Hero_Text: Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.
+----
