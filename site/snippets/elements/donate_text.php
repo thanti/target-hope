@@ -2,10 +2,7 @@
     <div class="col-inline inline--donate--text">
         <div class="col-middle">
             <div class="col col--8 donate-text__content">
-                <div class="donate-text">Target Hope e.V. finanziert seine Hilfsprojekte ausschließlich durch private Spenden. Diese sind in Deutschland steuerlich absetzbar.</div>
-                <div class="donate-text"> <strong>Für finanzielle Unterstützung für unsere Projekte sind wir sehr dankbar! </strong>Spenden können auf die unten angegebenen Konten überwiesen werden.</div>
-                <div class="donate-text">Für die Zusendung Ihrer Spendenbescheinigung geben Sie bei der Überweisung bitte Ihren Namen und Ihre vollständige Adresse an. Spendenbescheinigungen werden immer automatisch im Januar des Folgejahres verschickt.</div>
-                <div class="donate-text">Eine Pauschale von 10% auf alle eingehenden Spenden wird für die allgemeine Vereinsarbeit von Target Hope e.V. verwendet, vor allem für Werbung und Verwaltungskosten.</div>
+                <div class="donate-text"><?= $page->donate_text()->markdown() ?></div>
                 <div class="donate-box">
                     <div class="donate-box__header">
                         <i class="icon">
@@ -45,7 +42,7 @@
                 </form>
             </div>
             <div class="col col--4 image donate-text__image">
-                <img src="../../src/img/donate.jpg" alt="">
+                <img src="<?= $page->image('donate.jpg')->url() ?>" alt="">
             </div>
         </div>
     </div>

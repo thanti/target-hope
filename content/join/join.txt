@@ -1,0 +1,9 @@
+Title: Join
+----
+Donate_Text:
+
+<p>Target Hope e.V. finanziert seine Hilfsprojekte ausschließlich durch private Spenden. Diese sind in Deutschland steuerlich absetzbar.</p>
+<p><strong>Für finanzielle Unterstützung für unsere Projekte sind wir sehr dankbar!</strong> Spenden können auf die unten angegebenen Konten überwiesen werden.</p>
+<p>Für die Zusendung Ihrer Spendenbescheinigung geben Sie bei der Überweisung bitte Ihren Namen und Ihre vollständige Adresse an. Spendenbescheinigungen werden immer automatisch im Januar des Folgejahres verschickt.</p>
+<p>Eine Pauschale von 10% auf alle eingehenden Spenden wird für die allgemeine Vereinsarbeit von Target Hope e.V. verwendet, vor allem für Werbung und Verwaltungskosten.</p>
+----
