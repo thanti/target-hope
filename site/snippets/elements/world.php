@@ -2,11 +2,11 @@
     <div class="col-inline inline--world">
         <div class="col-middle">
             <div class="col col--4">
-                <div class="section-headline">Hoffnung in die ganze Welt</div>
-                <div class="world-text">Schwerpunkte von Target Hope e.V. sind Projekte der Entwicklungszusammenarbeit, um in mehr als 14 Ländern Menschen in Not Hoffnung und Perspektive für eine bessere Zukunft zu bieten.</div>
+                <div class="section-headline"><?= $site->world_section_headline() ?></div>
+                <div class="world-text"><?= $site->world_section_text() ?></div>
             </div>
             <div class="col col--8 world__image">
-                <img src="../../src/img/icons/map.svg" alt="">
+                <img src="<?= $site->image('map.svg')->url() ?>" alt="">
             </div>
         </div>
     </div>

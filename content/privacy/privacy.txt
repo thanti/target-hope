@@ -1,0 +1,9 @@
+Title: Privacy
+----
+Work_Info_Headline: Humanitäre Hilfstaktionen
+----
+Work_Info_Text: Verteilung von Nahrungsmitteln, Kleidung, Decken und Zelten, Sicherstellung von Trinkwasser und medizinische Versorgung.
+----
+Together_Info_Headline: Entwicklungszusammenarbeit
+----
+Together_Info_Text: Durch nachhaltige Aufbauhilfe und Projekte ist unser Ziel, die Menschen langfristig unabhängig von fremder Unterstützung zu machen.

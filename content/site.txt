@@ -3,3 +3,41 @@ Title: Target Hope
 Description: Brücken der Hoffnung
 ----
 Copyright: © Copyright 2020 Target Hope e.V.
+----
+Join_Headline: Mitmachen
+----
+Join_Hero_Headline: Hoffnung, die zum Tragen kommt
+----
+Join_Hero_Text: Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.
+----
+Info_Section_Headline: Brücken der Hoffnung
+----
+Info_Section_Text: 
+<p>Brücken der Hoffnung bauen … zwischen Wohlstand und Armut, Überfluss und Not … - gemeinsam mit unseren weltweiten Partnern … Menschen helfen, die in Not und Armut geraten sind, und ihnen Hoffnung für eine bessere Zukunft vermitteln …</p>
+<p>Target Hope e.V. finanziert seine Projekte überwiegend durch Spenden und führt mit einem Team von ehrenamtlichen Mitarbeitern Projekte und Hilfsaktionen durch in enger Zusammenarbeit mit lokalen Partnerorganisationen in den verschiedenen Ländern.</p>
+----
+World_Section_Headline: Hoffnung in die ganze Welt
+----
+World_Section_Text: Schwerpunkte von Target Hope e.V. sind Projekte der Entwicklungszusammenarbeit, um in mehr als 14 Ländern Menschen in Not Hoffnung und Perspektive für eine bessere Zukunft zu bieten.
+----
+Fact_Ort_Number: 67
+----
+Fact_Ort_Text: Orten
+----
+Fact_Lander_Number: 14
+----
+Fact_Lander_Text: Ländern
+----
+Fact_Menschen_Number: 55
+----
+Fact_Menschen_Text: Tsd. Menschen
+----
+Fact_Prozent_Number: 97%
+----
+Fact_Prozent_Text: der Spenden für Projekte
+----
+Fact_Seit_Text: seit
+----
+Fact_Seit_Number: 2009
+----
+Fact_More_button: Mehr über uns
