@@ -7,6 +7,6 @@
                 </svg>
             </i>
         </a>
-        <?php snippet('nav.php') ?>
+        <?php snippet('header/nav') ?>
     </div>
 </header>

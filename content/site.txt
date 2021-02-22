@@ -4,6 +4,8 @@ Description: Brücken der Hoffnung
 ----
 Copyright: © Copyright 2020 Target Hope e.V.
 ----
+Read_More: Mehr erfahren...
+----
 Join_Headline: Mitmachen
 ----
 Join_Hero_Headline: Hoffnung, die zum Tragen kommt

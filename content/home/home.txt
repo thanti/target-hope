@@ -5,3 +5,23 @@ Hero_Overline: Rumänien
 Hero_Headline: Hilfsaktion für 300 Kinder
 ----
 Hero_Text: Im Dorf Valeni wurden durch die Hilfsaktion im Dezember fast 300 Kinder aus sozial schwachen Familien mit Winterjacken, Winterschuhen und Socken versogt.
+----
+Work_Info_Headline: Humanitäre Hilfstaktionen
+----
+Work_Info_Text: Verteilung von Nahrungsmitteln, Kleidung, Decken und Zelten, Sicherstellung von Trinkwasser und medizinische Versorgung.
+----
+Together_Info_Headline: Entwicklungszusammenarbeit
+----
+Together_Info_Text: Durch nachhaltige Aufbauhilfe und Projekte ist unser Ziel, die Menschen langfristig unabhängig von fremder Unterstützung zu machen.
+----
+Joinus_Headline: Trage die Hoffnung mit!
+----
+Joinus_Donate: Spenden
+----
+Joinus_Donate_Text: Target Hope e.V. finanziert seine Hilfsprojekte ausschließlich durch private Spenden. Für finanzielle Unterstützung für unsere Projekte sind wir sehr dankbar!
+----
+Joinus_Join: Werde Teil des Projekts
+----
+Joinus_Join_Text: Hier kommt einen Text über die Möglichkeit, sich einzubringen und z.B. auf einen Einsatz mitzukommen.
+----
+Joinus_Join_Button: Ich mache mit

@@ -1,1 +1,23 @@
 Title: About Us
+----
+Story_Headline: Die Geschichte dahinter
+----
+Story_Text:
+
+Target Hope e.V, ist eine humanitäre Nichtregierungsorganisation (NGO), die seit ihrer Gründung im Jahr 2007 als gemeinnütziger Verein mit Sitz in Stuttgart in mehr als 14 Ländern Menschen hilft, die in Armut und Not geraten sind.
+<br><br>
+Schwerpunkte von Target Hope e.V. sind Projekte der Entwicklungszusammenarbeit, um Menschen in Not Hoffnung und Perspektive für eine bessere Zukunft zu bieten und Katastrophenhilfe, bei der Menschen mit Nahrungsmitteln, Decken, Kleidung, Trinkwasser, Medizin und Hilfe beim Wiederaufbau versorgt werden.
+Target Hope e.V. finanziert seine Projekte überwiegend durch Spenden und führt mit einem Team von ehrenamtlichen Mitarbeitern Projekte und Hilfsaktionen durch in enger Zusammenarbeit mit lokalen Partnerorganisationen in den verschiedenen Ländern.
+Transparenz und sorgfältige Umgang mit Spendengeldern ist uns sehr wichtig. 97% aller eingehenden Spenden werden an unsere weltweiten Projektpartner weitergeleitet.  
+Wir laden Sie herzlich ein, sich selbst ein Bild von unserer Arbeit zu machen.
+----
+Who_Headline: Wer steckt dahinter?
+----
+Who_Left_Headline: Joachim Eichhorn<br>Diplom-Agraringenieur
+----
+Who_Left_Text: Joachim Eichhorn war 20 Jahre als Agraringenieur und Ausbilder in Westafrika und Nordafrika tätig. Er unterstützte den Aufbau mehrerer Schulen, Ausbildungszentren, Krankenstationen und landwirtschaftlicher Projekte.
+----
+Who_Right_Headline: Zoltan Kiss<br>Selbständiger Unternehmer
+----
+Who_Right_Text: Zoltan Kiss arbeitet ehrenamtlich seit vielen Jahren als Organisator und Leiter von Hilfseinsätzen weltweit, u.a. in Katastrophengebieten wie Haiti und Philippinen und unter Kriegsflüchtlingen.
+----

@@ -1,5 +1,9 @@
 Title: Join
 ----
+Donate_Headline: Spenden
+----
+Join_Headline: Mitwirken
+----
 Donate_Text:
 
 <p>Target Hope e.V. finanziert seine Hilfsprojekte ausschließlich durch private Spenden. Diese sind in Deutschland steuerlich absetzbar.</p>

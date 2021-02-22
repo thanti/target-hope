@@ -1,0 +1,12 @@
+Title: Project
+----
+Hero_Overline: Projekte
+----
+Hero_Headline: Hoffnung, die zum Tragen kommt
+----
+Hero_Text: Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.
+----
+Slider_Headline: Aktuelle Projekte
+----
+Teaser_Headline: Bisherige Projekte
+----

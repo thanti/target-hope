@@ -1,0 +1,75 @@
+.who__content
+    text-align: left
+    padding: 0 rem(24)
+    min-width: 50%
+
+    &:first-child 
+        padding-right: rem(10)
+
+    &:last-child 
+        padding-left: rem(30)
+
+.inline--who
+    margin-bottom: 0
+
+.who-headline
+    color: $text-color
+    font-size: rem(15)
+    line-height: rem(24)
+    margin-bottom: rem(10)
+    word-break: break-word
+
+.who-text
+    color: $text-color
+    font-size: rem(15)
+    line-height: rem(24)
+    text-align: left
+    p
+        margin-bottom: rem(20)
+
+    &:last-child 
+        margin: 0 
+
+//with img
+
+.who-image
+    height: 450px
+    img
+        height: 100%
+        width: auto
+        
+
+@media (max-width: 768px)
+    
+    .inline--who
+        display: block 
+    
+    .who-inline
+        display: block
+
+    .who-big__content
+        padding: 0 
+        width: 100%
+
+    .image.who__image
+        width: 100%
+        margin-bottom: rem(24)
+
+    .who__content  
+        padding: 0 15px
+        width: 100%
+
+        &:first-child 
+            padding-bottom: rem(50)
+            margin-bottom: rem(50)
+            border-right: none 
+            border-bottom: 1px solid $secondary-color
+
+@media (max-width: 480px)
+    
+    .image.who__image
+        width: 100%
+        margin-bottom: rem(24)
+    
+    .inline--who
+        display: block

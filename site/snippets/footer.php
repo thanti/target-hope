@@ -13,6 +13,7 @@
           <div class="footer-text"><?= $site->copyright()->html() ?></div>
           <a class="footer-text" href="<?= $site->find('impressum')->url() ?>">Impressum</a>
           <a class="footer-text" href="<?= $site->find('datenschutz')->url() ?>">Datenschutz</a>
+          <a class="footer-text" href="<?= $site->find('agb')->url() ?>">AGB</a>
         </div>
       </div>
     </div>
