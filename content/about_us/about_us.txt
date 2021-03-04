@@ -21,3 +21,6 @@ Who_Right_Headline: Zoltan Kiss<br>Selbständiger Unternehmer
 ----
 Who_Right_Text: Zoltan Kiss arbeitet ehrenamtlich seit vielen Jahren als Organisator und Leiter von Hilfseinsätzen weltweit, u.a. in Katastrophengebieten wie Haiti und Philippinen und unter Kriegsflüchtlingen.
 ----
+How_Headline: Wie arbeiten wir?
+----
+How_Text: 97%  aller eingehenden Spenden werden an unsere weltweiten Projektpartner weitergeleitet, nur  3%  aller eingehenden Spenden werden für Verwaltung und Werbung verwendet.
