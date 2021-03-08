@@ -43,3 +43,13 @@ Fact_Seit_Text: seit
 Fact_Seit_Number: 2009
 ----
 Fact_More_button: Mehr über uns
+----
+Placeholder_Reason: Grund Deiner Anfrage
+----
+Placeholder_Name: Name
+----
+Placeholder_Email: E-Mail-Adresse
+----
+Placeholder_Message: Deine Nachricht
+----
+Form_Submit: Absenden

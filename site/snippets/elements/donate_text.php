@@ -29,16 +29,16 @@
             <div class="col col--8 donate-form__content hide">
                 <form class="form">
                     <div class="form__item">
-                        <input class="input" type="text" placeholder="<?= $page->placeholder_reason() ?>">
+                        <input class="input" type="text" placeholder="<?= $site->placeholder_reason() ?>">
                     </div>
                     <div class="form__row">
-                        <input class="input" type="text" placeholder="<?= $page->placeholder_name() ?>">
-                        <input class="input" type="text" placeholder="<?= $page->placeholder_email() ?>">
+                        <input class="input" type="text" placeholder="<?= $site->placeholder_name() ?>">
+                        <input class="input" type="text" placeholder="<?= $site->placeholder_email() ?>">
                     </div>
                     <div class="form__item form__item--textarea">
-                        <textarea class="textarea" row="10" placeholder="<?= $page->placeholder_message() ?>"></textarea>
+                        <textarea class="textarea" row="10" placeholder="<?= $site->placeholder_message() ?>"></textarea>
                     </div>
-                    <input class="button" type="submit" value="<?= $page->form_submit() ?>">
+                    <input class="button" type="submit" value="<?= $site->form_submit() ?>">
                 </form>
             </div>
             <div class="col col--4 image donate-text__image">

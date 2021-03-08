@@ -1,14 +1,10 @@
 <?php snippet('html_start') ?>
   <div class="wrapper">
-    <div class="wrapper-top">
-      <?php snippet('header/header') ?>
-      <?php snippet('elements/hero') ?>
+    <div class="wrapper-top top--white">
+      <?php snippet('header/header_white') ?>
     </div>
-    <?php snippet('elements/info') ?>
-    <?php snippet('elements/info_image') ?>
-    <?php snippet('elements/world') ?>
-    <?php snippet('elements/facts') ?>
-    <?php snippet('elements/joinus') ?>
+    <?php snippet('elements/faq') ?>
+    <?php snippet('elements/contact_form') ?>
 
     <?php snippet('footer') ?>
   </div>
