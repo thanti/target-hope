@@ -19,26 +19,17 @@
                 </div>
                 <div class="flex-inline-container flex-slider">       
                     <div class="slider-container" style="width: calc((319px * 4) + (30px * 3)); transform: translateX(0px);">
-                        <div class="slider__item">
-                            <a class="slider-img" href="project_open.html"> <img src="<?= $site->image('projekt-guinea.jpg')->url() ?>" alt=""></a>
-                            <div class="slider-overline">Hilfstaktion</div>
-                            <div class="slider-headline">Brunnenbau in Guinea</div>
-                        </div>
-                        <div class="slider__item">
-                            <a class="slider-img" href="project_open.html"> <img src="<?= $site->image('projekt-senegal.jpg')->url() ?>" alt=""></a>
-                            <div class="slider-overline">Entwicklungszusammenarbeit</div>
-                            <div class="slider-headline">Schule und Ausbildung in Senegal</div>
-                        </div>
-                        <div class="slider__item">
-                            <a class="slider-img" href="project_open.html"> <img src="<?= $site->image('projekt-guinea.jpg')->url() ?>" alt=""></a>
-                            <div class="slider-overline">Hilfstaktion</div>
-                            <div class="slider-headline">Brunnenbau in Guinea</div>
-                        </div>
-                        <div class="slider__item">
-                            <a class="slider-img" href="project_open.html"> <img src="<?= $site->image('projekt-senegal.jpg')->url() ?>" alt=""></a>
-                            <div class="slider-overline">Hilfstaktion</div>
-                            <div class="slider-headline">Brunnenbau in Guinea</div>
-                        </div>
+                        <?php foreach ($page->children()->listed()->sortBy('date', 'desc')->filterBy('tags', 'Aktuelle Projekte', ',') as $project): ?>
+                            <div class="slider__item">
+                                <a class="slider-img" href="<?= $project->url() ?>">
+                                    <?php if ($project->image()): ?>
+                                        <img src="<?= $project->image()->url() ?>" alt="">
+                                    <?php endif ?>
+                                </a>
+                                <div class="slider-overline"><?= $project->cat() ?></div>
+                                <div class="slider-headline"><?= $project->title() ?></div>
+                            </div>
+                        <?php endforeach ?>
                     </div>
                 </div>
             </div>

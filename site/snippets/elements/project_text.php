@@ -1,4 +1,4 @@
-<div class="col-container container--tertiary color-before">
+<div class="col-container container--tertiary color-before ">
     <div class="col-inline inline--project">
         <div class="col-middle">
             <div class="col col--12 section-headline">Brunnenbau in Guinea und Mali </div>

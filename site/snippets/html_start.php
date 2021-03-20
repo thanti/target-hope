@@ -14,9 +14,12 @@
         <link rel="apple-touch-icon" href="<?= $site->image('apple-touch-icon.png')->url() ?>">
         <link rel="apple-touch-icon-precomposed" href="<?= $site->image('apple-touch-icon.png')->url() ?>">
         <link rel="icon" sizes="192x192" href="<?= $site->image('android-touch-icon.png')->url() ?>">
-        <!-- script(src=js + "jquery.min.js?v=" + version)-->
-        <!-- script(src=js + "workfiles.js?v=" + version)-->
-        <!-- script(src=js/slick.min.js)--><!--[if lte IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><script>window.html5 || document.write("<script src="js/vendor/html5shiv.js"><\/script>")</script><![endif]-->
+        <?= js([
+            'assets/js/jquery.min.js',
+            'assets/js/workfiles.js',
+            'assets/js/slick.min.js',
+        ], true) ?>
+        <!--[if lte IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><script>window.html5 || document.write("<script src="js/vendor/html5shiv.js"><\/script>")</script><![endif]-->
         <!--[if lte IE 9]><div class="browsehappy"><h2 class="beta">Achtung</h2><p>Sie benutzen einen <strong>veralteten</strong> Browser. Bitte <a href="http://browsehappy.com/">updaten Sie Ihren Browser</a> um die volle Funktionalität dieser Website erleben zu können.</p></div><![endif]-->
     </head>
     <body>

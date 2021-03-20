@@ -3,26 +3,16 @@
         <div class="col-middle">
             <div class="col col--12 section-headline"><?= $page->teaser_headline() ?></div>
             <div class="flex-inline-container flex-teaser">
+            <?php foreach ($page->children()->listed()->sortBy('date', 'desc')->filterBy('tags', 'Bisherige Projekte', ',') as $project): ?>
                 <div class="col col--4 teaser__item">
-                    <a class="teaser-img" href="#!"> <img src="<?= $site->image('slider2.jpg')->url() ?>" alt=""></a>
-                    <div class="teaser-headline">Brunnenbau in Guinea</div>
+                    <a class="teaser-img" href="<?= $project->url() ?>"> 
+                        <?php if ($project->image()): ?>
+                            <img src="<?= $project->image()->url() ?>" alt="">
+                        <?php endif ?>
+                    </a>
+                    <div class="teaser-headline"><?= $project->title() ?></div>
                 </div>
-                <div class="col col--4 teaser__item">
-                    <a class="teaser-img" href="#!"> <img src="<?= $site->image('slider1.jpg')->url() ?>" alt=""></a>
-                    <div class="teaser-headline">Schule und Ausbildung in Senegal</div>
-                </div>
-                <div class="col col--4 teaser__item">
-                    <a class="teaser-img" href="#!"> <img src="<?= $site->image('slider13.jpg')->url() ?>" alt=""></a>
-                    <div class="teaser-headline">Brunnenbau in Guinea</div>
-                </div>
-                <div class="col col--4 teaser__item">
-                    <a class="teaser-img" href="#!"> <img src="<?= $site->image('slider8.jpg')->url() ?>" alt=""></a>
-                    <div class="teaser-headline">Brunnenbau in Guinea</div>
-                </div>
-                <div class="col col--4 teaser__item">
-                    <a class="teaser-img" href="#!"> <img src="<?= $site->image('slider9.jpg')->url() ?>" alt=""></a>
-                    <div class="teaser-headline">Brunnenbau in Guinea</div>
-                </div>
+            <?php endforeach ?>
             </div>
         </div>
     </div>

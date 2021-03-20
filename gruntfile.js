@@ -117,7 +117,7 @@ module.exports = function (grunt) {
 
             js: {
                 files: ['./assets/js/**/*.js'],
-                tasks: ['watcherCss', 'pug']
+                tasks: ['watcherCss']
             }
         }
     });
