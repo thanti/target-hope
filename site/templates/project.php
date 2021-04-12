@@ -4,22 +4,27 @@
       <?php snippet('header/header_white') ?>
     </div>
     
-    <main>
-      <article class="project">
-        <header class="project-header intro">
-          <h1><?= $page->title() ?></h1>
+    <div class="col-container container--tertiary color-before">
+    <div class="col-inline inline--project">
+      <div class="col-middle">
+        <div class="col col--12 section-headline">
+          <p><?= $page->title() ?></p>
+        </div>
+        <div class="col col--12 section-meta">
           <time class="project-date"><?= $page->date()->toDate('d F Y') ?></time>
           <?php if ($page->tags()->isNotEmpty()) : ?>
-          <p class="project-tags tags"><?= $page->tags() ?></p>
+            <p class="project-tags tags"><?= $page->tags() ?></p>
           <?php endif ?>
-        </header>
-
-        <div class="project-text text">
-          <?= $page->text()->kt() ?>
         </div>
-      </article>
-    </main>
-      
+        <div class="col col--12 project-inline-container">
+          <div class="col col--12 project-text-container">
+            <div class="project-text text">
+              <?= $page->text()->kirbytext() ?>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>      
     <?php snippet('footer') ?>
   </div>
 <?php snippet('html_end') ?>
