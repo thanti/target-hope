@@ -7,7 +7,7 @@ Ein Land, welches für seine Schönheit bekannt ist, hat aber auch seine Schatte
 Die Kriminalität in Südafrika ist ein sehr großes Problem. Neben der hohen Kriminalitätsrate ist auch der Alkohol- und Drogenkonsum, besonders in den ärmeren Teilen Südafrikas, den Townships, eine große Sache.   
 
 (image: Südafrika-4k.jpg width: 293 class: fig-float)
-(image: Südafrika-2k.jpg width: 293 class: fig-float)
+(image: 0_Südafrika-2k.jpg width: 293 class: fig-float)
 (image: Südafrika-5k.jpg width: 293 class: fig-float)
 
 Wir unterstützen unsere Projektpartner vor Ort, der Gewalt, dem Missbrauch und der Armut ein Ende zu bereiten. Durch ihre Arbeit in den Townships wird Männern und Frauen die Möglichkeit gegeben, einen anderen, besseren Weg einzuschlagen.
@@ -45,6 +45,8 @@ BIC: SOLADEST600
 Stichwort:
 Projekt 1800 „Südafrika“
 
+{{ gallery }}
+
 ----
 Cat: Hilfsaktion
 ----
@@ -52,3 +54,5 @@ Tags: Aktuelle Projekte
 ----
 Date: 2021-04-29
 ----
+Gallery: projects/container-cafe-fuer-township
+
