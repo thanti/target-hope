@@ -1,10 +1,10 @@
 <?php snippet('html_start') ?>
   <div class="wrapper">
-    <div class="wrapper-top top--white">
-      <?php snippet('header/header_white') ?>
+    <div class="wrapper-top">
+      <?php snippet('header/header') ?>
     </div>
     
-    <div class="col-container container--tertiary">
+    <div class="col-container container--white">
       <div class="col-inline inline--project">
         <div class="col-middle">
           <div class="col col--12 section-headline">
