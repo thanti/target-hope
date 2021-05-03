@@ -1,19 +1,6 @@
 .container--tertiary
-    padding-top: rem(20)
+    margin-bottom: rem(-100)
     
-.container--tertiary.color-before
-    position: relative
-    margin-bottom: rem(50)
-
-    &:after 
-        content: ''
-        background-color: $tertiary-color
-        width: 80px
-        height: 50px
-        position: absolute 
-        bottom: -49px
-        left: calc(50% - 40px)
-        clip-path: polygon(100% 0, 0 0, 50% 73%)
 
 .inline--project
     margin: rem(50) 0
@@ -30,6 +17,17 @@
     line-height: rem(24)
     margin-bottom: rem(20)
 
+    p
+        margin-bottom: rem(15)
+
+    figure
+        margin-bottom: rem(15)
+        text-align: center;
+
+.fig-float
+    float: left;
+    margin: rem(5)
+
 .project-next
     color: $secondary-color
     font-family: $primary-font-family-italy
@@ -44,9 +42,6 @@
 
         .icon
             fill: $primary-color
-
-.color-before
-    margin-top: rem(-50)
 
 .project-text-container
     padding-left: rem(40)

@@ -2,15 +2,15 @@ Title: Waisenkinder in Haiti
 ----
 Text: 
 
-[![](https://target-hope.de/wp-content/uploads/2020/09/haiti_flyer-1024x512.jpg)](https://target-hope.de/wp-content/uploads/2020/09/haiti_flyer.jpg)
+(image: https://target-hope.de/wp-content/uploads/2020/09/haiti_flyer.jpg width: 100%)
 
 Die soziale und politische Lage in Haiti und die noch bestehenden Auswirkungen des verheerenden Erdbebens von 2010 haben zur Folge, dass Zehntausende von Menschen in Armut und sozialer Not leben. Oft sehen sie keinen anderen Ausweg, als ihre Kinder wegzugeben. Viele Kinder enden auf der Straße und sind schon im frühen Alter Misshandlung und Prostitution ausgesetzt.
 
-[![](https://target-hope.de/wp-content/uploads/2020/09/22.11.-haiti-203_small-1024x768.jpg)](https://target-hope.de/wp-content/uploads/2020/09/22.11.-haiti-203_small.jpg)
+(image: https://target-hope.de/wp-content/uploads/2020/09/22.11.-haiti-203_small.jpg width: 80%)
 
 Target Hope e.V. unterstützt ein Waisenhaus in Port-au-Prince, das aktuell 17 Jungen beherbergt. Ihr Gebäude bietet die Möglichkeit, mehr Waisenkinder von der Straße zu holen und zum ersten Mal auch Mädchen aufnehmen zu können.
 
-[![](https://target-hope.de/wp-content/uploads/2020/09/IMG_9453.jpg)](https://target-hope.de/wp-content/uploads/2020/09/IMG_9453.jpg)
+(image: https://target-hope.de/wp-content/uploads/2020/09/IMG_9453.jpg width: 80%)
 
 **Hilfsaktion in drei Schritten:**
 
@@ -20,7 +20,7 @@ Target Hope e.V. unterstützt ein Waisenhaus in Port-au-Prince, das aktuell 17 J
 
 Die Kosten belaufen sich insgesamt auf ca. 30.000 €
 
- [![](https://target-hope.de/wp-content/uploads/2020/09/IGQK2433-e1600888134838-228x300.jpg)](https://target-hope.de/wp-content/uploads/2020/09/IGQK2433-e1600888134838.jpg) [![](https://target-hope.de/wp-content/uploads/2020/09/IMG_9454-300x225.jpg)](https://target-hope.de/wp-content/uploads/2020/09/IMG_9454.jpg)
+ (image: https://target-hope.de/wp-content/uploads/2020/09/IMG_9454.jpg width: 100%)
 
 **  
 Haben wir dein Interesse geweckt?**
@@ -42,11 +42,11 @@ Dann melde dich bei uns:
 
 017 55 96 23 05
 
-(image: https://target-hope.de/wp-content/uploads/2020/09/IMG_9452-300x169.jpg width: 100) 
+(image: https://target-hope.de/wp-content/uploads/2020/09/IMG_9452-300x169.jpg width: auto class: fig-float) 
 
-![](https://target-hope.de/wp-content/uploads/2020/09/2_small-300x201.jpg)
+(image: https://target-hope.de/wp-content/uploads/2020/09/2_small-300x201.jpg width: auto class: fig-float)
 
-[![](https://target-hope.de/wp-content/uploads/2020/09/heute-23.11-080_small-300x225.jpg)](https://target-hope.de/wp-content/uploads/2020/09/heute-23.11-080_small.jpg)
+(image: https://target-hope.de/wp-content/uploads/2020/09/heute-23.11-080_small-300x225.jpg width: auto class: fig-float)
 
 ----
 Cat: Hilfsaktion

@@ -2,7 +2,7 @@ Title: Target Hope
 ----
 Description: Brücken der Hoffnung
 ----
-Copyright: © Copyright 2020 Target Hope e.V.
+Copyright: © Copyright 2021 Target Hope e.V.
 ----
 Read_More: Mehr erfahren...
 ----

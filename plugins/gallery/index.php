@@ -8,7 +8,7 @@
  * More about plugins: https://getkirby.com/docs/guide/plugins/plugin-basics
  */
 
-Kirby::plugin('starterkit/gallery', [
+Kirby::plugin('target-hope/gallery', [
     'hooks' => [
         'kirbytags:after' => function ($text, $data, $options) {
 

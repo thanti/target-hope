@@ -1,4 +1,4 @@
-Title: Project
+Title: Projeke
 ----
 Hero_Overline: Projekte
 ----

@@ -1,4 +1,4 @@
-Title: Contact Us
+Title: Kontakt
 ----
 Faq_Headline: Noch Fragen?
 ----
