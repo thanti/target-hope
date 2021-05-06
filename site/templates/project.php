@@ -19,7 +19,7 @@
           </div>
           <div class="col col--12 section-meta">
             <?php if ($page->tags()->isNotEmpty()) : ?>
-              <p class="project-tags tags"><time class="project-date"><?= $page->date()->toDate('d F Y') ?></time> | <?= $page->tags() ?></p>
+              <p class="project-tags tags"><time class="project-date"><?= $page->date()->toDate('d.m.Y') ?></time> | <?= $page->tags() ?></p>
             <?php else: ?>
               <time class="project-date"><?= $page->date()->toDate('d F Y') ?></time>
             <?php endif ?>

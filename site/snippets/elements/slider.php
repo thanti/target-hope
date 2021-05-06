@@ -25,8 +25,10 @@
                                     <?php if ($project->image()): ?>
                                     <?php endif ?>
                                 </a>
-                                <div class="slider-overline"><?= $project->cat() ?></div>
-                                <div class="slider-headline"><?= $project->title() ?></div>
+                                <a href="<?= $project->url() ?>">
+                                    <div class="slider-overline"><?= $project->cat() ?></div>
+                                    <div class="slider-headline"><?= $project->title() ?></div>
+                                </a>
                             </div>
                         <?php endforeach ?>
                     </div>

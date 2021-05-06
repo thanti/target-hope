@@ -10,7 +10,9 @@
                             <img src="<?= $project->image()->url() ?>" alt="">
                         <?php endif ?>
                     </a>
-                    <div class="teaser-headline"><?= $project->title() ?></div>
+                    <a href="<?= $project->url() ?>">
+                        <div class="teaser-headline"><?= $project->title() ?></div>
+                    </a>
                 </div>
             <?php endforeach ?>
             </div>
