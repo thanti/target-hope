@@ -35,5 +35,25 @@ jQuery(document).ready(
     jQuery("slider__item").click(function() {
         jQuery(".container--project").addClass("show");
     }); 
+
+    var transx = 0;
+    var transxMax = $(".slider-container").width() - $(".flex-inline-container").width();
+    jQuery(".button--next").click(function() {
+        if ((transx - 277) > -transxMax) {
+            transx -= 277;
+        } else {
+            transx = -transxMax;
+        }
+        jQuery(".slider-container").css('transform', 'translateX(' + transx + 'px)');
+    });
+
+    jQuery(".button--prev").click(function() {
+        if ((transx + 277) < 0) {
+            transx += 277;
+        } else {
+            transx = 0;
+        }
+        jQuery(".slider-container").css('transform', 'translateX(' + transx + 'px)');
+    });
 });
 
