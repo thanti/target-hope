@@ -21,9 +21,8 @@
                     <div class="slider-container" style="width: calc((319px * 4) + (30px * 3)); transform: translateX(0px);">
                         <?php foreach ($page->children()->listed()->sortBy('date', 'desc')->filterBy('tags', 'Aktuelle Projekte', ',') as $project): ?>
                             <div class="slider__item">
-                                <a class="slider-img" href="<?= $project->url() ?>">
+                                <a class="slider-img" href="<?= $project->url() ?>" style="background-image: url('<?= $project->image()->url() ?>');">
                                     <?php if ($project->image()): ?>
-                                        <img src="<?= $project->image()->url() ?>" alt="">
                                     <?php endif ?>
                                 </a>
                                 <div class="slider-overline"><?= $project->cat() ?></div>
