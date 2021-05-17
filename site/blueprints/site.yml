@@ -1,3 +1,10 @@
 title: Site
-preset: pages
-unlisted: true
+columns:
+  - width: 1/2
+    sections:
+      projects: sections/projects
+  - width: 1/2
+    sections:
+      pages:
+        type: pages
+        create: default
