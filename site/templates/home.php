@@ -2,7 +2,7 @@
   <div class="wrapper">
     <div class="wrapper-top">
       <?php snippet('header/header') ?>
-      <?php snippet('elements/hero') ?>
+      <?php snippet('elements/hero_slider') ?>
     </div>
     <?php snippet('elements/info') ?>
     <?php snippet('elements/info_image') ?>

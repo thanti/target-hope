@@ -67,5 +67,16 @@ jQuery(document).ready(
         prevArrow: '<button class="button button-slider button--prev"><i class="icon"><svg role="img"><use xlink:href="../img/all.svg#icon-arrow"></use></svg></i></button>',
         nextArrow: '<button class="button button-slider button--next"><i class="icon"><svg role="img"><use xlink:href="../img/all.svg#icon-arrow"></use></svg></i></button>'
     });
+
+    $('.hero-slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 4000,
+        dots: true,
+        prevArrow: '<button class="button button-slider button--prev"><i class="icon"><svg role="img"><use xlink:href="../img/all.svg#icon-arrow"></use></svg></i></button>',
+        nextArrow: '<button class="button button-slider button--next"><i class="icon"><svg role="img"><use xlink:href="../img/all.svg#icon-arrow"></use></svg></i></button>'
+    });
 });
 
