@@ -32,7 +32,7 @@ jQuery(document).ready(
         jQuery(".donate").addClass("donate__content--active");
     });
 
-    jQuery("slider__item").click(function() {
+    /*jQuery("slider__item").click(function() {
         jQuery(".container--project").addClass("show");
     }); 
 
@@ -54,6 +54,18 @@ jQuery(document).ready(
             transx = 0;
         }
         jQuery(".slider-container").css('transform', 'translateX(' + transx + 'px)');
+    });
+    */
+    
+    $('.slider').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        dots: true,
+        prevArrow: '<button class="button button-slider button--prev"><i class="icon"><svg role="img"><use xlink:href="../img/all.svg#icon-arrow"></use></svg></i></button>',
+        nextArrow: '<button class="button button-slider button--next"><i class="icon"><svg role="img"><use xlink:href="../img/all.svg#icon-arrow"></use></svg></i></button>'
     });
 });
 
