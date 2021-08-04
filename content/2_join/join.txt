@@ -1,5 +1,11 @@
 Title: Mitmachen
 ----
+Join_Headline: Mitmachen
+----
+Join_Hero_Headline: Hoffnung, die zum Tragen kommt
+----
+Join_Hero_Text: Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.
+----
 Donate_Headline: Spenden
 ----
 Join_Headline: Mitwirken
@@ -34,5 +40,3 @@ Placeholder_Email: E-Mail-Adresse
 Placeholder_Message: Ihre Nachricht
 ----
 Form_Submit: Absenden
-----
-Donate_Headline: Spenden

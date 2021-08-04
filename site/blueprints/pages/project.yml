@@ -26,7 +26,7 @@ status:
 # More about columns: https://getkirby.com/docs/guide/blueprints/layout#defining-columns
 columns:
   - width: 2/3
-    # This columns only has a single field
+    # use blocks instead of textarea???
     fields:
       text:
         type: textarea

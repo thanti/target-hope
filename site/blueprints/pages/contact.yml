@@ -1,0 +1,45 @@
+# Each page blueprint must have a title, the title may be different from the file name
+title: Contact
+
+# Each page can have an icon that is shown in page listings when no preview image is available.
+icon: 🏠
+
+# Page options allow you to control how users can interact with the page.
+# Here we prevent changing the page status (the home page cannot be renamed or deleted by default)
+# More about page options: https://getkirby.com/docs/reference/panel/blueprints/page#options
+options:
+  changeStatus: false
+
+columns:
+  - width: 1
+    fields:
+      faq_headline:
+        label: Faq_Headline
+        type: text
+      faq_text:
+        label: Faq_Text
+        type: textarea
+      form_headline:
+        label: Form_Headline
+        type: text
+      form_text:
+        label: Form_Text
+        type: textarea
+  - width: 1
+    fields:
+      placeholder_reason:
+        label: Placeholder_Reason
+        type: text
+      placeholder_name:
+        label: Placeholder_Name
+        type: text
+      placeholder_email:
+        label: Placeholder_Email
+        type: text
+      placeholder_message:
+        label: Placeholder_Message
+        type: text
+      form_submit:
+        label: Form_Submit
+        type: text
+      

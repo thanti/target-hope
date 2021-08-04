@@ -14,6 +14,12 @@ Together_Info_Headline: Entwicklungszusammenarbeit
 ----
 Together_Info_Text: Durch nachhaltige Aufbauhilfe und Projekte ist unser Ziel, die Menschen langfristig unabhängig von fremder Unterstützung zu machen.
 ----
+Info_Section_Headline: Brücken der Hoffnung
+----
+Info_Section_Text: 
+<p>Brücken der Hoffnung bauen … zwischen Wohlstand und Armut, Überfluss und Not … - gemeinsam mit unseren weltweiten Partnern … Menschen helfen, die in Not und Armut geraten sind, und ihnen Hoffnung für eine bessere Zukunft vermitteln …</p>
+<p>Target Hope e.V. finanziert seine Projekte überwiegend durch Spenden und führt mit einem Team von ehrenamtlichen Mitarbeitern Projekte und Hilfsaktionen durch in enger Zusammenarbeit mit lokalen Partnerorganisationen in den verschiedenen Ländern.</p>
+----
 Joinus_Headline: Trage die Hoffnung mit!
 ----
 Joinus_Donate: Spenden

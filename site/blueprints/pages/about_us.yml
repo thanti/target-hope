@@ -1,0 +1,53 @@
+# Each page blueprint must have a title, the title may be different from the file name
+title: About Us
+
+# Each page can have an icon that is shown in page listings when no preview image is available.
+icon: 🏠
+
+# Page options allow you to control how users can interact with the page.
+# Here we prevent changing the page status (the home page cannot be renamed or deleted by default)
+# More about page options: https://getkirby.com/docs/reference/panel/blueprints/page#options
+options:
+  changeStatus: false
+
+columns:
+  - width: 1
+    fields:
+      story_headline:
+        label: Story_Headline
+        type: text
+      story_text:
+        label: Story_Text
+        type: textarea
+      who_headline:
+        label: Who_Headline
+        type: text
+  - width: 1
+    sections:
+      images:
+        extends: sections/images
+  - width: 1/2
+    fields:
+      who_left_headline:
+        label: Who_Left_Headline
+        type: text
+      who_left_text:
+        label: Who_Left_Text
+        type: textarea
+  - width: 1/2
+    fields:
+      who_right_headline:
+        label: Who_Right_Headline
+        type: text
+      who_right_text:
+        label: Who_Right_Text
+        type: textarea
+  
+  - width: 1
+    fields:
+      how_headline:
+        label: How_Headline
+        type: text
+      how_text:
+        label: How_Text
+        type: textarea

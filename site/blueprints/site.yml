@@ -8,3 +8,60 @@ columns:
       pages:
         type: pages
         create: default
+  - width: 1
+    fields:
+      worldmap:
+        label: World Map
+        type: headline
+        numbered: false
+      world_section_headline:
+        label: World_Section_Headline
+        type: text
+      world_section_text:
+        label: World_Section_Text
+        type: textarea
+  - width: 1
+    fields:
+      facts:
+        label: Facts
+        type: headline
+        numbered: false
+  - width: 1/3
+    fields:
+      fact_ort_number:
+        label: Fact_Ort_Text
+        type: text
+      fact_ort_text:
+        label: Fact_Ort_Text
+        type: text
+      fact_prozent_number:
+        label: Fact_Prozent_Number
+        type: text
+      fact_prozent_text:
+        label: Fact_Prozent_Text
+        type: text
+  - width: 1/3
+    fields:
+      fact_lander_number:
+        label: Fact_Lander_Number
+        type: text
+      fact_lander_text:
+        label: Fact_Lander_Text
+        type: text
+      fact_seit_text:
+        label: Fact_Seit_Text
+        type: text
+      fact_seit_number:
+        label: Fact_Seit_Text
+        type: text
+  - width: 1/3
+    fields:
+      fact_menschen_number:
+        label: Fact_Menschen_Number
+        type: text
+      fact_menschen_text:
+        label: Fact_Menschen_Text
+        type: text
+      fact_more_button:
+        label: Fact_More_button
+        type: text
