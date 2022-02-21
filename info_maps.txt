@@ -1,0 +1,35 @@
+In dem world.pug findest du die Pins und die Boxen 
+
+.col.col--6.world__image-box
+    #hti.pin
+        #hti.world__image-text
+            h3.headline 
+            p.world-text 
+
+D.h. wenn da weitere Boxen hinzukommen sollten müsstest du einfach nur copy&paste machen den Text und die ID austauschen. Das wäre auch alles hier in der pug Datei.
+
+(Falls es mit dem grunt nicht funktioniert und du tatsächlich nur mit HTML arbeitest, kannst du die Anpassungen genauso direkt im HTML machen)
+
+Wenn du hier durch bist, dann müsstest du noch in der world.sass Datei quasi die CSS Änderungen machen.
+
+Hier gibt es 4 verschiedene Bildschirmgrößen: 
+
+- [ ] @media (max-width: 820px)
+- [ ] @media (max-width: 764px)
+- [ ] @media (max-width: 414px)
+
+Je nach Größe werden die Pins und die Boxen individuell gesetzt. Theoretisch könnte man das alles über JS machen. Da bin ich leider nicht affin, aber wenn du da mehr Ahnung hast, dann darfst du das gerne machen :D
+
+Beispiel:
+
+#phl.pin
+    right: 8%
+    top: 42%
+
+—> #phl steht für den Philippinen Pin und wird absolut in der obigen Position auf der Karte gesetzt.
+—> die Position müsstest du noch in den verschiedenen Queries anpassen und auf kleineren Bildschirmen evtl auch .world__image-text (der beim Hovern auftauchende Text)
+
+
+Auch hier könntest du alles direkt im CSS anpassen :)
+
+Ich hoffe das ist soweit verständlich, aber bei Fragen darfst du dich gerne melden!
