@@ -26,8 +26,12 @@ jQuery(document).ready(function() {
         jQuery(".join").removeClass("hide");
     });
 
-    jQuery("slider__item").click(function() {
+    jQuery(".slider__item").click(function() {
         jQuery(".container--project").addClass("show");
+    });
+
+    jQuery("#phl.pin").click(function() {
+        jQuery("#phl.world__image-text").addClass(".world__image-text--active");
     });
 });
 
